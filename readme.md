@@ -4,7 +4,7 @@
 vim-dict-wordpress is a distribution of WordPress dictionary files fro Vim.
 This dictionary includes all action hooks, filter hooks and functions.
 
-![Screen Shot](http://firegoby.jp/wp-content/uploads/2013/03/vim-wordpress.png)
+![Screen Shot](http://firegoby.jp/wp-content/uploads/2013/03/vim-wordpress-dict.png)
 
 ## How do I made the dict ?
 
