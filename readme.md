@@ -29,7 +29,7 @@ This dictionary includes all action hooks, filter hooks and functions.
     $ cd ~/.vim/dict
     $ git clone git://github.com/miya0001/vim-dict-wordpress.git
 
-finally, add line ~/.vimrc like below.
+finally, add line to ~/.vimrc like below.
 
     autocmd FileType php :set dictionary=~/.vim/dict/vim-dict-wordpress/*.dict
 
