@@ -26,6 +26,11 @@ This dictionary includes all action hooks, filter hooks and functions.
     find . -name "*.php" -exec egrep '^function ' {} \; \
     | sed -e "s/function \(.*\)(.*/\1/g" | sed -e "s/^&//g" | sort | uniq
 
+    # class
+    find . -name "*.php" | xargs grep "^class" \
+    | sed "s/.*\:class //g" \
+    | sed "s/ .*//g" | sort | uniq
+
 ## Install
 
     $ cd ~/.vim/dict
