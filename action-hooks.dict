@@ -70,11 +70,6 @@ after_switch_theme
 after_theme_row
 after_theme_row_$stylesheet
 after_wp_tiny_mce
-akismet_comment_check_response
-akismet_spam_caught
-akismet_submit_nonspam_comment
-akismet_submit_spam_comment
-akismet_tabs
 all_admin_notices
 archive_blog
 atom_author
@@ -103,7 +98,6 @@ clean_page_cache
 clean_post_cache
 clean_term_cache
 clear_auth_cookie
-comment_add_author_url
 comment_atom_entry
 comment_closed
 comment_duplicate_trigger
@@ -123,7 +117,6 @@ comment_on_draft
 comment_on_password_protected
 comment_on_trash
 comment_post
-comment_remove_author_url
 comment_{$new_status}_{$comment->comment_type}
 comment_{$old_status}_to_{$new_status}
 commentrss2_item
@@ -399,10 +392,6 @@ trash_post_comments
 trashed_comment
 trashed_post
 trashed_post_comments
-twentyeleven_credits
-twentyeleven_enqueue_color_scheme
-twentyten_credits
-twentytwelve_credits
 unarchive_blog
 uninstall_
 unload_textdomain

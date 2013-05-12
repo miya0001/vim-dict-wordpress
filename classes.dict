@@ -1,4 +1,3 @@
-Akismet_Widget
 AtomEntry
 AtomFeed
 AtomParser
@@ -96,7 +95,6 @@ Theme_Upgrader
 Theme_Upgrader_Skin
 Translation_Entry
 Translations
-Twenty_Eleven_Ephemera_Widget
 WP
 WP_Admin_Bar
 WP_Ajax_Response
@@ -195,8 +193,6 @@ _WP_Dependency
 _WP_List_Table_Compat
 ftp
 ftp_base
-multibyte_patch
-multibyte_patch_ext
 phpmailerException
 wp_xmlrpc_server
 wpdb
