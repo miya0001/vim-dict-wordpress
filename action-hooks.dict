@@ -61,6 +61,7 @@ adminmenu
 after-
 after_db_upgrade
 after_delete_post
+after_menu_locations_table
 after_mu_upgrade
 after_plugin_row
 after_plugin_row_$plugin_file
@@ -143,6 +144,7 @@ customize_render_section
 customize_render_section_
 customize_save
 customize_save_
+customize_save_after
 customize_update_
 dbx_post_advanced
 dbx_post_sidebar
@@ -227,11 +229,12 @@ export_filters
 export_wp
 get_footer
 get_header
-get_search_form
 get_sidebar
 get_template_part_{$slug}
 grant_super_admin
 granted_super_admin
+heartbeat_nopriv_tick
+heartbeat_tick
 http_api_debug
 in_admin_footer
 in_admin_header
@@ -304,6 +307,8 @@ post-plupload-upload-ui
 post-upload-ui
 post_comment_status_meta_box-options
 post_edit_form_tag
+post_lock_lost_dialog
+post_locked_dialog
 post_submitbox_misc_actions
 post_submitbox_start
 post_updated
@@ -314,6 +319,7 @@ pre-upload-ui
 pre_comment_on_post
 pre_current_active_plugins
 pre_delete_site_option_
+pre_get_search_form
 pre_post_update
 preprocess_signup_form
 print_media_templates
@@ -419,6 +425,7 @@ updated_option
 updated_postmeta
 updated_usermeta
 updated_{$meta_type}_meta
+upgrader_process_complete
 upload_ui_over_quota
 user_admin_menu
 user_admin_notices

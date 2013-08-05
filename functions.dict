@@ -19,6 +19,7 @@ _admin_search_query
 _ajax_wp_die_handler
 _autop_newline_preservation_helper
 _c
+_canonical_charset
 _cleanup_header_comment
 _cleanup_image_add_caption
 _close_comments_for_old_post
@@ -75,6 +76,7 @@ _links_add_base
 _links_add_target
 _list_meta_row
 _load_image_to_edit_path
+_local_storage_notice
 _make_cat_compat
 _make_email_clickable_cb
 _make_url_clickable_cb
@@ -127,6 +129,7 @@ _sort_uname_callback
 _split_str_by_whitespace
 _thickbox_path_admin_subfolder
 _transition_post_status
+_truncate_post_slug
 _unzip_file_pclzip($file, $to, $needed_dirs = array
 _unzip_file_ziparchive($file, $to, $needed_dirs = array
 _update_blog_date_on_post_delete
@@ -158,7 +161,7 @@ _wp_delete_tax_menu_item
 _wp_filter_build_unique_id
 _wp_filter_taxonomy_base
 _wp_footer_scripts
-_wp_get_post_autosave_hack
+_wp_get_post_revision_version
 _wp_get_user_contactmethods
 _wp_http_get_object
 _wp_image_editor_choose( $args = array
@@ -179,12 +182,14 @@ _wp_post_thumbnail_class_filter
 _wp_post_thumbnail_class_filter_add
 _wp_post_thumbnail_class_filter_remove
 _wp_post_thumbnail_html
+_wp_preview_terms_filter
 _wp_put_post_revision
 _wp_relative_upload_path
 _wp_sidebars_changed
 _wp_specialchars
 _wp_timezone_choice_usort_callback
 _wp_translate_postdata
+_wp_upgrade_revisions_of_post
 _wptexturize_pushpop_element
 _x
 _xmlrpc_wp_die_handler( $message, $title = '', $args = array
@@ -259,6 +264,7 @@ admin_color_scheme_picker
 admin_url
 allow_subdirectory_install
 allow_subdomain_install
+allowed_http_request_hosts
 allowed_tags
 antispambot
 apache_mod_loaded
@@ -354,8 +360,8 @@ comments_rss
 comments_rss_link
 comments_template
 compression_test
-confirm_another_blog_signup
-confirm_blog_signup
+confirm_another_blog_signup( $domain, $path, $blog_title, $user_name, $user_email = '', $meta = array
+confirm_blog_signup( $domain, $path, $blog_title, $user_name = '', $user_email = '', $meta = array
 confirm_delete_users
 confirm_user_signup
 content_url
@@ -427,6 +433,7 @@ display_setup_form
 display_space_usage
 display_theme
 display_themes
+do_accordion_sections
 do_action
 do_action_ref_array
 do_activate_header
@@ -455,7 +462,6 @@ drop_index
 dropdown_categories( $default = 0, $parent = 0, $popular_ids = array
 dropdown_cats
 dropdown_link_categories
-dvortr
 dynamic_sidebar
 edit_bookmark_link
 edit_comment
@@ -549,6 +555,7 @@ get_archive_template
 get_archives
 get_archives_link
 get_attached_file
+get_attached_media
 get_attachment_fields_to_edit
 get_attachment_icon
 get_attachment_icon_src
@@ -718,6 +725,7 @@ get_linksbyname
 get_linksbyname_withrating
 get_locale
 get_locale_stylesheet_uri
+get_media_embedded_in_content
 get_media_item
 get_media_items
 get_meta_keys
@@ -779,6 +787,10 @@ get_post_format_link
 get_post_format_slugs
 get_post_format_string
 get_post_format_strings
+get_post_galleries
+get_post_galleries_images
+get_post_gallery
+get_post_gallery_images
 get_post_meta
 get_post_meta_by_id
 get_post_mime_type
@@ -855,6 +867,7 @@ get_super_admins
 get_tag
 get_tag_feed_link
 get_tag_link
+get_tag_regex
 get_tag_template
 get_tags
 get_tags_to_edit
@@ -938,6 +951,7 @@ get_udims
 get_upload_iframe_src
 get_upload_space_available
 get_uploaded_header_images
+get_url_in_content
 get_user_by
 get_user_by_email
 get_user_count
@@ -972,6 +986,7 @@ has_meta
 has_nav_menu
 has_post_format
 has_post_thumbnail
+has_shortcode
 has_tag
 has_term
 hash_hmac
@@ -1205,6 +1220,7 @@ menu_page_url
 meta_box_prefs
 meta_form
 metadata_exists
+ms_allowed_http_request_hosts
 ms_cookie_constants
 ms_deprecated_blogs_file
 ms_file_constants
@@ -1294,7 +1310,7 @@ post_preview
 post_reply_link($args = array
 post_revisions_meta_box
 post_slug_meta_box
-post_submit_meta_box
+post_submit_meta_box($post, $args = array
 post_tags_meta_box
 post_thumbnail_meta_box
 post_trackback_meta_box
@@ -1457,6 +1473,7 @@ setup_postdata
 setup_userdata
 shake(id,a,d){c=a.shift();s(id,c);if(a.length>0){setTimeout(function(){shake(id,a,d);},d);}else{try{g(id).position='static';wp_attempt_focus();}catch
 shortcode_atts
+shortcode_exists
 shortcode_parse_atts
 shortcode_unautop
 show_admin_bar
@@ -1706,7 +1723,9 @@ win_is_writable
 wlwmanifest_link
 wp
 wp_add_dashboard_widget
+wp_add_id3_tag_data
 wp_add_inline_style
+wp_add_object_terms
 wp_add_post_tags
 wp_admin_bar_add_secondary_groups
 wp_admin_bar_appearance_menu
@@ -1752,7 +1771,9 @@ wp_ajax_find_posts
 wp_ajax_get_attachment
 wp_ajax_get_comments
 wp_ajax_get_permalink
+wp_ajax_get_revision_diffs
 wp_ajax_get_tagcloud
+wp_ajax_heartbeat
 wp_ajax_hidden_columns
 wp_ajax_image_editor
 wp_ajax_imgedit_preview
@@ -1763,7 +1784,7 @@ wp_ajax_menu_get_metabox
 wp_ajax_menu_locations_save
 wp_ajax_menu_quick_search
 wp_ajax_meta_box_order
-wp_ajax_nopriv_autosave
+wp_ajax_nopriv_heartbeat
 wp_ajax_oembed_cache
 wp_ajax_query_attachments
 wp_ajax_replyto_comment
@@ -1790,6 +1811,10 @@ wp_allowed_protocols
 wp_array_slice_assoc
 wp_attachment_is_image
 wp_attempt_focus
+wp_audio_shortcode
+wp_auth_check
+wp_auth_check_html
+wp_auth_check_load
 wp_authenticate
 wp_authenticate_cookie
 wp_authenticate_username_password
@@ -1816,6 +1841,7 @@ wp_check_filetype
 wp_check_filetype_and_ext
 wp_check_for_changed_slugs
 wp_check_invalid_utf8
+wp_check_locked_posts
 wp_check_mysql_version
 wp_check_password
 wp_check_php_mysql_versions
@@ -1912,7 +1938,9 @@ wp_edit_attachments_query
 wp_edit_posts_query
 wp_editor( $content, $editor_id, $settings = array
 wp_embed_defaults
+wp_embed_handler_audio
 wp_embed_handler_googlevideo
+wp_embed_handler_video
 wp_embed_register_handler
 wp_embed_unregister_handler
 wp_enqueue_media( $args = array
@@ -1951,6 +1979,7 @@ wp_get_attachment_metadata
 wp_get_attachment_thumb_file
 wp_get_attachment_thumb_url
 wp_get_attachment_url
+wp_get_audio_extensions
 wp_get_comment_status
 wp_get_cookie_login
 wp_get_current_commenter
@@ -1982,6 +2011,7 @@ wp_get_post_tags( $post_id = 0, $args = array
 wp_get_post_terms( $post_id = 0, $taxonomy = 'post_tag', $args = array
 wp_get_recent_posts( $args = array
 wp_get_referer
+wp_get_revision_ui_diff
 wp_get_schedule($hook, $args = array
 wp_get_schedules
 wp_get_shortlink
@@ -1991,6 +2021,7 @@ wp_get_term_taxonomy_parent_id
 wp_get_theme
 wp_get_themes( $args = array
 wp_get_update_data
+wp_get_video_extensions
 wp_get_widget_defaults
 wp_guess_url
 wp_handle_sideload
@@ -1998,9 +2029,11 @@ wp_handle_upload
 wp_hash
 wp_hash_password
 wp_head
+wp_heartbeat_settings
 wp_html_excerpt
 wp_htmledit_pre
 wp_http_supports( $capabilities = array
+wp_http_validate_url
 wp_iframe
 wp_image_editor
 wp_image_editor_supports( $args = array
@@ -2024,6 +2057,7 @@ wp_is_mobile
 wp_is_post_autosave
 wp_is_post_revision
 wp_is_stream
+wp_is_writable
 wp_iso_descrambler
 wp_just_in_time_script_localization
 wp_kses( $string, $allowed_html, $allowed_protocols = array
@@ -2088,10 +2122,12 @@ wp_maybe_load_widgets
 wp_mce_translation
 wp_media_insert_url_form
 wp_media_upload_handler
+wp_mediaelement_fallback
 wp_meta
 wp_mime_type_icon
 wp_mkdir_p
 wp_nav_menu( $args = array
+wp_nav_menu_disabled_check
 wp_nav_menu_item_link_meta_box
 wp_nav_menu_item_post_type_meta_box
 wp_nav_menu_item_taxonomy_meta_box
@@ -2101,6 +2137,7 @@ wp_nav_menu_max_depth
 wp_nav_menu_post_type_meta_boxes
 wp_nav_menu_setup
 wp_nav_menu_taxonomy_meta_boxes
+wp_nav_menu_update_menu_items 
 wp_network_dashboard_right_now
 wp_new_blog_notification
 wp_new_comment
@@ -2133,10 +2170,12 @@ wp_plupload_default_settings
 wp_popular_terms_checklist
 wp_post_mime_type_where
 wp_post_revision_title
+wp_post_revision_title_expanded
 wp_pre_kses_less_than
 wp_pre_kses_less_than_callback
 wp_preload_dialogs
 wp_prepare_attachment_for_js
+wp_prepare_revisions_for_js
 wp_print_editor_js
 wp_print_footer_scripts
 wp_print_head_scripts
@@ -2148,15 +2187,20 @@ wp_prototype_before_jquery
 wp_publish_post
 wp_quicktags
 wp_rand
+wp_read_audio_metadata
 wp_read_image_metadata
+wp_read_video_metadata
 wp_redirect
 wp_redirect_admin_locations
 wp_referer_field
+wp_refresh_post_lock
+wp_refresh_post_nonces
 wp_register
 wp_register_script( $handle, $src, $deps = array
 wp_register_sidebar_widget($id, $name, $output_callback, $options = array
 wp_register_style( $handle, $src, $deps = array
 wp_register_widget_control($id, $name, $control_callback, $options = array
+wp_registration_url
 wp_rel_nofollow
 wp_rel_nofollow_callback
 wp_remote_fopen
@@ -2169,16 +2213,23 @@ wp_remote_retrieve_header
 wp_remote_retrieve_headers
 wp_remote_retrieve_response_code
 wp_remote_retrieve_response_message
+wp_remove_object_terms
 wp_reschedule_event( $timestamp, $recurrence, $hook, $args = array
 wp_reset_postdata
 wp_reset_query
 wp_reset_vars
 wp_restore_image
 wp_restore_post_revision
+wp_revisions_enabled
+wp_revisions_to_keep
 wp_revoke_user
 wp_richedit_pre
 wp_rss
 wp_safe_redirect
+wp_safe_remote_get( $url, $args = array
+wp_safe_remote_head( $url, $args = array
+wp_safe_remote_post( $url, $args = array
+wp_safe_remote_request( $url, $args = array
 wp_salt
 wp_sanitize_redirect
 wp_save_image
@@ -2220,6 +2271,7 @@ wp_shrink_dimensions
 wp_sidebar_description
 wp_signon
 wp_simplepie_autoload
+wp_slash
 wp_spam_comment
 wp_specialchars
 wp_specialchars_decode
@@ -2229,6 +2281,7 @@ wp_ssl_constants
 wp_start_object_cache
 wp_stream_image
 wp_strip_all_tags
+wp_style_add_data
 wp_style_is
 wp_style_loader_src
 wp_suspend_cache_addition
@@ -2261,6 +2314,7 @@ wp_unregister_GLOBALS
 wp_unregister_sidebar_widget
 wp_unregister_widget_control
 wp_unschedule_event( $timestamp, $hook, $args = array
+wp_unslash
 wp_unspam_comment
 wp_untrash_comment
 wp_untrash_post
@@ -2292,6 +2346,7 @@ wp_validate_auth_cookie
 wp_validate_redirect
 wp_verify_nonce
 wp_version_check
+wp_video_shortcode
 wp_welcome_panel
 wp_widget_control
 wp_widget_description
