@@ -1,4 +1,3 @@
-
 _admin_menu
 _core_updated_successfully
 _network_admin_menu
@@ -9,6 +8,7 @@ activate_blog
 activate_header
 activate_plugin
 activate_wp_head
+activate_{$plugin}
 activated_plugin
 activity_box_end
 add_admin_bar_menus
@@ -61,7 +61,7 @@ admin_print_styles-media-upload-popup
 admin_print_styles-press-this.php
 admin_xml_ns
 adminmenu
-after-
+after-{$taxonomy}-table
 after_db_upgrade
 after_delete_post
 after_menu_locations_table
@@ -88,6 +88,7 @@ auth_cookie_expired
 auth_cookie_malformed
 auth_cookie_valid
 auth_redirect
+automatic_updates_complete
 before_delete_post
 before_signup_form
 before_wp_tiny_mce
@@ -242,15 +243,15 @@ heartbeat_tick
 http_api_debug
 in_admin_footer
 in_admin_header
-in_plugin_update_message-$file
-in_theme_update_message-$theme_key
+in_plugin_update_message-{$file}
+in_theme_update_message-{$theme_key}
 init
 install_plugins_$tab
 install_plugins_pre_$tab
 install_plugins_table_header
-install_themes_
-install_themes_pre_
+install_themes_pre_{$tab}
 install_themes_table_header
+install_themes_{$tab}
 load-
 load-categories.php
 load-edit-link-categories.php
@@ -350,9 +351,6 @@ retrieve_password
 retrieve_password_key
 revoke_super_admin
 revoked_super_admin
-right_now_content_table_end
-right_now_discussion_table_end
-right_now_table_end
 rightnow_end
 rss2_comments_ns
 rss2_head
@@ -416,7 +414,7 @@ untrashed_comment
 untrashed_post
 untrashed_post_comments
 update-core-custom_
-update-custom_
+update-custom_{$action}
 update_blog_public
 update_option
 update_option_{$option}
@@ -509,3 +507,8 @@ xmlrpc_publish_post
 xmlrpc_rsd_apis
 {$new_status}_{$post->post_type}
 {$old_status}_to_{$new_status}
+{$taxonomy}_add_form
+{$taxonomy}_add_form_fields
+{$taxonomy}_pre_add_form
+{$taxonomy}_pre_edit_form
+{$taxonomy}_term_new_form_tag

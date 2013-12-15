@@ -949,6 +949,7 @@ get_theme_root
 get_theme_root_uri
 get_theme_roots
 get_theme_support
+get_theme_update_available
 get_theme_updates
 get_themes
 get_to_ping
@@ -993,7 +994,7 @@ has_excerpt
 has_filter
 has_meta
 has_nav_menu
-has_post_format
+has_post_format( $format = array
 has_post_thumbnail
 has_shortcode
 has_tag
@@ -1262,7 +1263,6 @@ next_post_rel_link
 next_posts
 next_posts_link
 next_widget_id_number
-no_update_actions
 nocache_headers
 noindex
 normalize_whitespace
@@ -1681,6 +1681,8 @@ upgrade_330
 upgrade_340
 upgrade_350
 upgrade_370
+upgrade_372
+upgrade_380
 upgrade_all
 upgrade_network
 upgrade_old_slugs
@@ -1755,11 +1757,12 @@ wp_admin_bar_new_content_menu
 wp_admin_bar_render
 wp_admin_bar_search_menu
 wp_admin_bar_shortlink_menu
+wp_admin_bar_sidebar_toggle
 wp_admin_bar_site_menu
 wp_admin_bar_updates_menu
 wp_admin_bar_wp_menu
 wp_admin_css
-wp_admin_css_color($key, $name, $url, $colors = array
+wp_admin_css_color( $key, $name, $url, $colors = array(), $icons = array
 wp_admin_css_uri
 wp_ajax_add_link_category
 wp_ajax_add_menu_item
@@ -1807,6 +1810,7 @@ wp_ajax_sample_permalink
 wp_ajax_save_attachment
 wp_ajax_save_attachment_compat
 wp_ajax_save_attachment_order
+wp_ajax_save_user_color_scheme
 wp_ajax_save_widget
 wp_ajax_send_attachment_to_editor
 wp_ajax_send_link_to_editor
@@ -1871,6 +1875,7 @@ wp_clear_auth_cookie
 wp_clear_scheduled_hook( $hook, $args = array
 wp_clearcookie
 wp_clone
+wp_color_scheme_settings
 wp_comment_form_unfiltered_html_nonce
 wp_comment_reply
 wp_comment_trashnotice
@@ -1905,15 +1910,17 @@ wp_dashboard_incoming_links
 wp_dashboard_incoming_links_control
 wp_dashboard_incoming_links_output
 wp_dashboard_plugins
-wp_dashboard_plugins_output
+wp_dashboard_plugins_output( $rss, $args = array
 wp_dashboard_primary
 wp_dashboard_primary_control
+wp_dashboard_primary_output
 wp_dashboard_quick_press
 wp_dashboard_quick_press_output
 wp_dashboard_quota
 wp_dashboard_recent_comments
 wp_dashboard_recent_comments_control
 wp_dashboard_recent_drafts
+wp_dashboard_recent_posts
 wp_dashboard_right_now
 wp_dashboard_rss_control( $widget_id, $form_inputs = array
 wp_dashboard_rss_output
@@ -1921,6 +1928,7 @@ wp_dashboard_secondary
 wp_dashboard_secondary_control
 wp_dashboard_secondary_output
 wp_dashboard_setup
+wp_dashboard_site_activity
 wp_dashboard_trigger_widget_control
 wp_debug_backtrace_summary
 wp_debug_mode
@@ -2052,6 +2060,7 @@ wp_handle_upload
 wp_hash
 wp_hash_password
 wp_head
+wp_heartbeat_set_suspension
 wp_heartbeat_settings
 wp_html_excerpt
 wp_htmledit_pre
@@ -2203,6 +2212,7 @@ wp_pre_kses_less_than_callback
 wp_preload_dialogs
 wp_prepare_attachment_for_js
 wp_prepare_revisions_for_js
+wp_prepare_themes_for_js
 wp_print_editor_js
 wp_print_footer_scripts
 wp_print_head_scripts
@@ -2305,6 +2315,7 @@ wp_specialchars_decode
 wp_sprintf
 wp_sprintf_l
 wp_ssl_constants
+wp_star_rating( $args = array
 wp_start_object_cache
 wp_stream_image
 wp_strip_all_tags
