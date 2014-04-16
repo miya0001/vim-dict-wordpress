@@ -11,10 +11,8 @@ Bulk_Upgrader_Skin
 Core_Upgrader
 Custom_Background
 Custom_Image_Header
-EnchantSpell
 File_Upload_Upgrader
 Gettext_Translations
-GoogleSpell
 IXR_Base64
 IXR_Client
 IXR_ClientMulticall
@@ -29,9 +27,6 @@ Language_Pack_Upgrader
 Language_Pack_Upgrader_Skin
 MO
 MagpieRSS
-Moxiecode_JSON
-Moxiecode_JSONReader
-Moxiecode_Logger
 NOOP_Translations
 PHPMailer
 PO
@@ -41,8 +36,6 @@ POMO_FileReader
 POMO_Reader
 POMO_StringReader
 POP3
-PSpell
-PSpellShell
 PasswordHash
 Plugin_Installer_Skin
 Plugin_Upgrader
@@ -82,7 +75,6 @@ SimplePie_Source
 SimplePie_XML_Declaration_Parser
 SimplePie_gzdecode
 Snoopy
-SpellChecker
 Text_Diff
 Text_Diff_Engine_native
 Text_Diff_Engine_shell
@@ -174,9 +166,11 @@ WP_User_Search
 WP_Users_List_Table
 WP_Widget
 WP_Widget_Archives
+WP_Widget_Area_Customize_Control
 WP_Widget_Calendar
 WP_Widget_Categories
 WP_Widget_Factory
+WP_Widget_Form_Customize_Control
 WP_Widget_Links
 WP_Widget_Meta
 WP_Widget_Pages

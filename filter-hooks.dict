@@ -1,3 +1,4 @@
+
 _get_page_link
 _wp_post_revision_field_$field
 _wp_post_revision_fields
@@ -35,6 +36,7 @@ attachment_icon
 attachment_innerHTML
 attachment_link
 attachment_max_dims
+attachment_thumbnail_args
 attribute_escape
 audio_submitbox_misc_sections
 auth_cookie
@@ -129,6 +131,7 @@ customize_allowed_urls
 customize_sanitize_js_{$this->id}
 customize_sanitize_{$this->id}
 customize_value_
+customizer_widgets_section_args
 dashboard_glance_items
 dashboard_primary_feed
 dashboard_primary_link
@@ -158,6 +161,7 @@ delete_{$meta_type}_metadata
 deprecated_argument_trigger_error
 deprecated_file_trigger_error
 deprecated_function_trigger_error
+determine_current_user
 disable_captions
 display_media_states
 display_post_states
@@ -166,6 +170,7 @@ do_parse_request
 documentation_ignore_functions
 doing_it_wrong_trigger_error
 domain_exists
+dynamic_sidebar_has_widgets
 dynamic_sidebar_params
 edit_$field
 edit_bookmark_link
@@ -216,7 +221,6 @@ filesystem_method_file
 flush_rewrite_rules_hard
 force_filtered_html_on_import
 format_to_edit
-format_to_post
 found_users_query
 fs_ftp_connection_types
 gallery_style
@@ -355,6 +359,7 @@ img_caption_shortcode
 img_caption_shortcode_width
 import_upload_size_limit
 includes_url
+incompatible_sql_modes
 index_rel_link
 install_plugin_complete_actions
 install_plugins_nonmenu_tabs
@@ -366,10 +371,12 @@ install_themes_table_api_args_
 install_themes_tabs
 intermediate_image_sizes
 intermediate_image_sizes_advanced
+is_active_sidebar
 is_email
 is_email_address_unsafe
 is_multi_author
 is_protected_meta
+is_wide_widget_in_customizer
 jpeg_quality
 js_escape
 kses_allowed_protocols
@@ -424,7 +431,6 @@ mce_buttons_4
 mce_css
 mce_external_languages
 mce_external_plugins
-mce_spellchecker_languages
 media_buttons_context
 media_meta
 media_row_actions
@@ -457,6 +463,7 @@ nav_menu_items_{$post_type_name}
 nav_menu_link_attributes
 nav_menu_meta_box_object
 network_admin_url
+network_by_path_segments_count
 network_home_url
 network_site_url
 network_sites_updated_message_
@@ -490,6 +497,7 @@ page_attributes_dropdown_pages_args
 page_css_class
 page_link
 page_rewrite_rules
+page_row_actions
 paginate_links
 parent_file
 parent_post_rel_link
@@ -521,7 +529,9 @@ post_link
 post_link_category
 post_mime_types
 post_password_expires
+post_playlist
 post_rewrite_rules
+post_row_actions
 post_thumbnail_html
 post_thumbnail_size
 post_type_archive_feed_link
@@ -547,7 +557,9 @@ pre_comment_content
 pre_comment_user_agent
 pre_comment_user_ip
 pre_ent2ncr
+pre_get_network_by_path
 pre_get_shortlink
+pre_get_site_by_path
 pre_get_space_used
 pre_http_request
 pre_http_send_through_proxy
@@ -559,11 +571,13 @@ pre_post_link
 pre_post_{$field}
 pre_remote_source
 pre_set_site_transient_
+pre_set_theme_mod_$name
 pre_set_transient_
 pre_site_option_
 pre_site_transient_
 pre_term_{$field}
 pre_transient_
+pre_update_option
 pre_update_option_
 pre_update_site_option_
 pre_upload_error
@@ -578,6 +592,7 @@ pre_user_nicename
 pre_user_nickname
 pre_user_url
 pre_user_{$field}
+pre_wp_nav_menu
 pre_{$field}
 pre_{$taxonomy}_{$field}
 prepend_attachment
@@ -673,6 +688,7 @@ single_cat_title
 single_post_title
 single_tag_title
 single_term_title
+site_by_path_segments_count
 site_option_
 site_transient_
 site_url
@@ -751,6 +767,7 @@ theme_action_links_$stylesheet
 theme_install_actions
 theme_locale
 theme_mod_{$name}
+theme_page_templates
 theme_root
 theme_root_uri
 theme_row_meta
@@ -815,6 +832,7 @@ widget_archives_dropdown_args
 widget_categories_args
 widget_categories_dropdown_args
 widget_comments_args
+widget_customizer_setting_args
 widget_display_callback
 widget_form_callback
 widget_links_args
@@ -866,6 +884,7 @@ wp_fullscreen_buttons
 wp_generate_attachment_metadata
 wp_generate_tag_cloud
 wp_generator_type
+wp_get_attachment_id3_keys
 wp_get_attachment_image_attributes
 wp_get_attachment_link
 wp_get_attachment_metadata
@@ -879,11 +898,13 @@ wp_get_object_terms
 wp_get_update_data
 wp_handle_upload
 wp_handle_upload_prefilter
+wp_header_image_attachment_metadata
 wp_headers
 wp_http_accept_encoding
 wp_http_cookie_value
 wp_image_editor_before_change
 wp_image_editors
+wp_insert_attachment_data
 wp_insert_post_data
 wp_insert_post_empty_content
 wp_insert_post_parent
@@ -905,6 +926,7 @@ wp_mail_content_type
 wp_mail_from
 wp_mail_from_name
 wp_mail_original_content
+wp_mce_translation
 wp_mediaelement_fallback
 wp_mime_type_icon
 wp_nav_locations_listed_per_menu
