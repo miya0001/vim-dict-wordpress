@@ -52,6 +52,10 @@ admin_init
 admin_menu
 admin_notices
 admin_page_access_denied
+admin_post
+admin_post_nopriv
+admin_post_nopriv_{$action}
+admin_post_{$action}
 admin_print_footer_scripts
 admin_print_scripts
 admin_print_scripts-$hook_suffix
@@ -87,6 +91,7 @@ atom_head
 atom_ns
 attachment_submitbox_misc_actions
 auth_cookie_bad_hash
+auth_cookie_bad_session_token
 auth_cookie_bad_username
 auth_cookie_expired
 auth_cookie_malformed
@@ -101,7 +106,6 @@ blog_privacy_selector
 bulk_edit_custom_box
 check_admin_referer
 check_ajax_referer
-check_comment_flood
 clean_attachment_cache
 clean_object_term_cache
 clean_page_cache
@@ -149,6 +153,8 @@ customize_preview_init
 customize_register
 customize_render_control
 customize_render_control_
+customize_render_panel
+customize_render_panel_{$this->id}
 customize_render_section
 customize_render_section_{$this->id}
 customize_save
@@ -178,6 +184,7 @@ delete_term_relationships
 delete_term_taxonomy
 delete_transient_
 delete_user
+delete_user_form
 delete_usermeta
 delete_{$meta_type}_meta
 delete_{$meta_type}meta
@@ -333,6 +340,7 @@ pre_comment_on_post
 pre_current_active_plugins
 pre_delete_site_option_
 pre_get_search_form
+pre_get_users
 pre_post_update
 preprocess_signup_form
 print_media_templates
@@ -367,6 +375,7 @@ rss2_item
 rss2_ns
 rss_head
 rss_item
+rss_tag_pre
 sanitize_comment_cookies
 save_post
 save_post_{$post->post_type}

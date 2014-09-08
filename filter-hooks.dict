@@ -28,8 +28,10 @@ allowed_http_origins
 allowed_redirect_hosts
 allowed_themes
 apply_filters
+async_update_translation
 async_upload_{$type}
 atom_enclosure
+attach_session_information
 attachment_fields_to_edit
 attachment_fields_to_save
 attachment_icon
@@ -128,6 +130,7 @@ cron_schedules
 current_theme_supports-{$feature}
 custom_menu_order
 customize_allowed_urls
+customize_control_active
 customize_sanitize_js_{$this->id}
 customize_sanitize_{$this->id}
 customize_value_
@@ -186,6 +189,7 @@ edit_term_link
 edit_term_{$field}
 edit_user_{$field}
 edit_{$field}
+edit_{$post_type}_per_page
 edit_{$taxonomy}_{$field}
 editable_extensions
 editable_roles
@@ -338,6 +342,7 @@ http_request_version
 http_response
 https_local_ssl_verify
 https_ssl_verify
+human_time_diff
 icon_dir
 icon_dir_uri
 icon_dirs
@@ -412,7 +417,6 @@ loginout
 logout_url
 lostpassword_redirect
 lostpassword_url
-manage_
 manage_media_columns
 manage_pages_columns
 manage_posts_columns
@@ -421,6 +425,7 @@ manage_taxonomies_for_attachment_columns
 manage_taxonomies_for_{$post_type}_columns
 manage_users_custom_column
 manage_{$post_type}_posts_columns
+manage_{$screen->id}_columns
 manage_{$this->screen->id}_sortable_columns
 manage_{$this->screen->taxonomy}_custom_column
 map_meta_cap
@@ -486,7 +491,9 @@ oembed_dataparse
 oembed_fetch_url
 oembed_linktypes
 oembed_providers
+oembed_remote_get_args
 oembed_result
+oembed_ttl
 option_
 option_enable_xmlrpc
 option_page_capability_{$option_page}
@@ -638,6 +645,7 @@ root_rewrite_rules
 rss_enclosure
 rss_update_frequency
 rss_update_period
+run_wptexturize
 safe_style_css
 salt
 sanitize_email
@@ -667,6 +675,7 @@ secure_logged_in_cookie
 secure_signon_cookie
 self_link
 send_core_update_notification_email
+session_token_manager
 set-screen-option
 set_url_scheme
 shake_error_codes
@@ -723,6 +732,7 @@ term_id_filter
 term_link
 term_links-$taxonomy
 term_name
+term_search_min_chars
 term_updated_messages
 term_{$field}
 term_{$field}_rss
@@ -781,6 +791,8 @@ tiny_mce_before_init
 tiny_mce_plugins
 trackback_url
 transient_
+translations_api
+translations_api_result
 type_url_form_media
 unzip_file_use_ziparchive
 update_attached_file
@@ -876,9 +888,12 @@ wp_dropdown_cats
 wp_dropdown_pages
 wp_dropdown_users
 wp_edit_nav_menu_walker
+wp_editor_expand
 wp_editor_set_quality
+wp_editor_settings
 wp_embed_handler_audio
 wp_embed_handler_video
+wp_embed_handler_youtube
 wp_feed_cache_transient_lifetime
 wp_fullscreen_buttons
 wp_generate_attachment_metadata
@@ -897,7 +912,6 @@ wp_get_nav_menus
 wp_get_object_terms
 wp_get_update_data
 wp_handle_upload
-wp_handle_upload_prefilter
 wp_header_image_attachment_metadata
 wp_headers
 wp_http_accept_encoding
@@ -917,6 +931,7 @@ wp_link_query
 wp_link_query_args
 wp_list_bookmarks
 wp_list_categories
+wp_list_comments_args
 wp_list_pages
 wp_list_pages_excludes
 wp_login_errors
@@ -953,11 +968,13 @@ wp_save_post_revision_check_for_changes
 wp_search_stopwords
 wp_setup_nav_menu_item
 wp_signup_location
+wp_spaces_regexp
 wp_sprintf
 wp_sprintf_l
 wp_tag_cloud
 wp_terms_checklist_args
 wp_title
+wp_title_parts
 wp_title_rss
 wp_trim_excerpt
 wp_trim_words
@@ -991,6 +1008,7 @@ wpmu_validate_blog_signup
 wpmu_validate_user_signup
 wpmu_welcome_notification
 wpmu_welcome_user_notification
+wxr_export_skip_commentmeta
 wxr_export_skip_postmeta
 xmlrpc_allow_anonymous_comments
 xmlrpc_blog_options
@@ -999,6 +1017,7 @@ xmlrpc_default_posttype_fields
 xmlrpc_default_revision_fields
 xmlrpc_default_taxonomy_fields
 xmlrpc_default_user_fields
+xmlrpc_element_limit
 xmlrpc_enabled
 xmlrpc_login_error
 xmlrpc_methods
@@ -1014,6 +1033,7 @@ xmlrpc_prepare_user
 xmlrpc_text_filters
 xmlrpc_wp_insert_post_data
 year_link
+{$action}_prefilter
 {$adjacent}_image_link
 {$adjacent}_post_link
 {$adjacent}_post_rel_link
