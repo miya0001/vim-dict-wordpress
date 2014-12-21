@@ -148,8 +148,9 @@ customize_controls_init
 customize_controls_print_footer_scripts
 customize_controls_print_scripts
 customize_controls_print_styles
-customize_preview_
 customize_preview_init
+customize_preview_{$this->id}
+customize_preview_{$this->type}
 customize_register
 customize_render_control
 customize_render_control_
@@ -222,6 +223,7 @@ edit_comment
 edit_form_advanced
 edit_form_after_editor
 edit_form_after_title
+edit_form_before_permalink
 edit_form_top
 edit_link
 edit_link_category_form
@@ -339,6 +341,7 @@ pre-upload-ui
 pre_comment_on_post
 pre_current_active_plugins
 pre_delete_site_option_
+pre_delete_term
 pre_get_search_form
 pre_get_users
 pre_post_update
@@ -467,6 +470,7 @@ wp_before_admin_bar_render
 wp_blacklist_check
 wp_create_file_in_uploads
 wp_create_nav_menu
+wp_creating_autosave
 wp_dashboard_setup
 wp_delete_nav_menu
 wp_delete_post_revision

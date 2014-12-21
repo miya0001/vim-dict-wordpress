@@ -92,6 +92,7 @@ _media_states
 _n
 _n_noop
 _nav_menu_item_id_use_once
+_navigation_markup
 _nc
 _nx
 _nx_noop
@@ -172,6 +173,8 @@ _wp_handle_upload
 _wp_http_get_object
 _wp_image_editor_choose
 _wp_iso_convert
+_wp_json_convert_string
+_wp_json_sanity_check
 _wp_kses_decode_entities_chr
 _wp_kses_decode_entities_chr_hexdec
 _wp_kses_split_callback
@@ -191,6 +194,7 @@ _wp_post_thumbnail_html
 _wp_preview_terms_filter
 _wp_put_post_revision
 _wp_relative_upload_path
+_wp_render_title_tag
 _wp_sidebars_changed
 _wp_specialchars
 _wp_timezone_choice_usort_callback
@@ -908,6 +912,8 @@ get_term_to_edit
 get_terms
 get_terms_to_edit
 get_the_ID
+get_the_archive_description
+get_the_archive_title
 get_the_attachment_link
 get_the_author
 get_the_author_ID
@@ -940,7 +946,10 @@ get_the_modified_date
 get_the_modified_time
 get_the_password_form
 get_the_permalink
+get_the_post_navigation
 get_the_post_thumbnail
+get_the_posts_navigation
+get_the_posts_pagination
 get_the_tag_list
 get_the_tags
 get_the_taxonomies
@@ -1260,6 +1269,7 @@ mysql2date
 network_admin_url
 network_domain_check
 network_home_url
+network_settings_add_js
 network_site_url
 network_step1
 network_step2
@@ -1544,6 +1554,8 @@ term_description
 term_exists
 term_is_ancestor_of
 the_ID
+the_archive_description
+the_archive_title
 the_attachment_link
 the_attachment_links
 the_author
@@ -1587,8 +1599,11 @@ the_modified_time
 the_permalink
 the_permalink_rss
 the_post
+the_post_navigation
 the_post_password
 the_post_thumbnail
+the_posts_navigation
+the_posts_pagination
 the_search_query
 the_shortlink
 the_tags
@@ -1602,6 +1617,7 @@ the_weekday
 the_weekday_date
 the_widget
 theme_update_available
+themes_api
 timer_start
 timer_stop
 tinymce_include
@@ -1793,6 +1809,7 @@ wp_ajax_delete_meta
 wp_ajax_delete_page
 wp_ajax_delete_post
 wp_ajax_delete_tag
+wp_ajax_destroy_sessions
 wp_ajax_dim_comment
 wp_ajax_dismiss_wp_pointer
 wp_ajax_edit_comment
@@ -1890,6 +1907,7 @@ wp_check_term_hierarchy_for_loops
 wp_checkdate
 wp_clean_plugins_cache
 wp_clean_themes_cache
+wp_clean_update_cache
 wp_clear_auth_cookie
 wp_clear_scheduled_hook
 wp_clearcookie
@@ -2056,6 +2074,7 @@ wp_get_network
 wp_get_nocache_headers
 wp_get_object_terms
 wp_get_original_referer
+wp_get_password_hint
 wp_get_pomo_file_data
 wp_get_popular_importers
 wp_get_post_autosave
@@ -2122,6 +2141,7 @@ wp_is_post_revision
 wp_is_stream
 wp_is_writable
 wp_iso_descrambler
+wp_json_encode
 wp_just_in_time_script_localization
 wp_kses
 wp_kses_allowed_html
@@ -2251,6 +2271,7 @@ wp_print_editor_js
 wp_print_footer_scripts
 wp_print_head_scripts
 wp_print_media_templates
+wp_print_revision_templates
 wp_print_scripts
 wp_print_styles
 wp_protect_special_option

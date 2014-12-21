@@ -108,6 +108,7 @@ WP_Customize_Image_Control
 WP_Customize_Panel
 WP_Customize_Section
 WP_Customize_Setting
+WP_Customize_Sidebar_Section
 WP_Customize_Upload_Control
 WP_Date_Query
 WP_Dependencies

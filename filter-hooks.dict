@@ -107,6 +107,7 @@ comment_notification_subject
 comment_notification_text
 comment_post_redirect
 comment_reply_link
+comment_reply_link_args
 comment_row_actions
 comment_save_pre
 comment_status_links
@@ -131,8 +132,10 @@ current_theme_supports-{$feature}
 custom_menu_order
 customize_allowed_urls
 customize_control_active
+customize_panel_active
 customize_sanitize_js_{$this->id}
 customize_sanitize_{$this->id}
+customize_section_active
 customize_value_
 customizer_widgets_section_args
 dashboard_glance_items
@@ -157,6 +160,7 @@ default_excerpt
 default_feed
 default_hidden_meta_boxes
 default_option_
+default_page_template_title
 default_site_option_
 default_title
 delete_site_email_content
@@ -292,6 +296,8 @@ get_terms
 get_terms_args
 get_terms_fields
 get_terms_orderby
+get_the_archive_description
+get_the_archive_title
 get_the_author_
 get_the_categories
 get_the_date
@@ -349,6 +355,7 @@ icon_dirs
 iis7_supports_permalinks
 iis7_url_rewrite_rules
 image_add_caption_shortcode
+image_add_caption_text
 image_downsize
 image_edit_before_change
 image_editor_default_mime_type
@@ -449,6 +456,7 @@ media_upload_tabs
 media_view_settings
 media_view_strings
 menu_order
+meta_query_find_compatible_table_alias
 mime_types
 mod_rewrite_rules
 month_link
@@ -508,6 +516,7 @@ page_row_actions
 paginate_links
 parent_file
 parent_post_rel_link
+password_hint
 password_reset_key_expired
 phone_content
 pingback_ping_source_uri
@@ -616,6 +625,7 @@ print_styles_array
 privacy_on_link_text
 privacy_on_link_title
 private_title_format
+process_text_diff_html
 protected_title_format
 pub_priv_sql_capability
 query
@@ -636,6 +646,7 @@ request
 request_filesystem_credentials
 retrieve_password_message
 retrieve_password_title
+revision_text_diff_options
 rewrite_rules
 rewrite_rules_array
 richedit_pre
@@ -665,6 +676,7 @@ screen_layout_columns
 screen_options_show_screen
 screen_settings
 script_loader_src
+script_loader_tag
 search_feed_link
 search_form_format
 search_link
@@ -873,6 +885,7 @@ wp_check_filetype_and_ext
 wp_check_post_lock_window
 wp_checkdate
 wp_comment_reply
+wp_constrain_dimensions
 wp_count_attachments
 wp_count_comments
 wp_count_posts
@@ -910,6 +923,7 @@ wp_get_current_commenter
 wp_get_nav_menu_items
 wp_get_nav_menus
 wp_get_object_terms
+wp_get_revision_ui_diff
 wp_get_update_data
 wp_handle_upload
 wp_header_image_attachment_metadata
@@ -965,6 +979,7 @@ wp_revisions_to_keep
 wp_save_image_editor_file
 wp_save_image_file
 wp_save_post_revision_check_for_changes
+wp_save_post_revision_post_has_changed
 wp_search_stopwords
 wp_setup_nav_menu_item
 wp_signup_location
