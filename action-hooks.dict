@@ -42,6 +42,7 @@ admin_color_scheme_picker
 admin_enqueue_scripts
 admin_footer
 admin_footer-
+admin_footer-press-this.php
 admin_footer-widgets.php
 admin_head
 admin_head-$hook_suffix
@@ -404,6 +405,7 @@ signup_header
 signup_hidden_fields
 spam_comment
 spammed_comment
+split_shared_term
 start_previewing_theme
 stop_previewing_theme
 submitlink_box

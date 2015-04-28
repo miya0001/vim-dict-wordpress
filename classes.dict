@@ -105,10 +105,13 @@ WP_Customize_Control
 WP_Customize_Filter_Setting
 WP_Customize_Header_Image_Control
 WP_Customize_Image_Control
+WP_Customize_Media_Control
 WP_Customize_Panel
 WP_Customize_Section
 WP_Customize_Setting
 WP_Customize_Sidebar_Section
+WP_Customize_Theme_Control
+WP_Customize_Themes_Section
 WP_Customize_Upload_Control
 WP_Date_Query
 WP_Dependencies
@@ -146,6 +149,7 @@ WP_Plugin_Install_List_Table
 WP_Plugins_List_Table
 WP_Post_Comments_List_Table
 WP_Posts_List_Table
+WP_Press_This
 WP_Query
 WP_Rewrite
 WP_Role

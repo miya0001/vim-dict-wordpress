@@ -39,6 +39,7 @@ attachment_innerHTML
 attachment_link
 attachment_max_dims
 attachment_thumbnail_args
+attachment_url_to_postid
 attribute_escape
 audio_submitbox_misc_sections
 auth_cookie
@@ -72,6 +73,7 @@ bulk_actions-{$this->screen->id}
 bulk_post_updated_messages
 can_edit_network
 cancel_comment_reply_link
+category_css_class
 category_description
 category_feed_link
 category_link
@@ -93,6 +95,8 @@ comment_form_defaults
 comment_form_field_comment
 comment_form_field_{$name}
 comment_form_logged_in
+comment_form_submit_button
+comment_form_submit_field
 comment_id_fields
 comment_link
 comment_max_links_url
@@ -132,9 +136,13 @@ current_theme_supports-{$feature}
 custom_menu_order
 customize_allowed_urls
 customize_control_active
+customize_dynamic_setting_args
+customize_dynamic_setting_class
 customize_panel_active
+customize_refresh_nonces
 customize_sanitize_js_{$this->id}
 customize_sanitize_{$this->id}
+customize_save_response
 customize_section_active
 customize_value_
 customizer_widgets_section_args
@@ -142,6 +150,7 @@ dashboard_glance_items
 dashboard_primary_feed
 dashboard_primary_link
 dashboard_primary_title
+dashboard_recent_posts_query_args
 dashboard_secondary_feed
 dashboard_secondary_link
 dashboard_secondary_title
@@ -170,6 +179,7 @@ deprecated_file_trigger_error
 deprecated_function_trigger_error
 determine_current_user
 disable_captions
+disable_months_dropdown
 display_media_states
 display_post_states
 do_mu_upgrade
@@ -206,9 +216,12 @@ embed_handler_html
 embed_maybe_make_link
 embed_oembed_discover
 embed_oembed_html
+emoji_ext
+emoji_url
 enable_edit_any_user_configuration
 enable_live_network_counts
 enable_post_by_email_configuration
+enable_press_this_media_discovery
 enable_update_services_configuration
 enter_title_here
 esc_html
@@ -240,6 +253,8 @@ get_attached_media
 get_attached_media_args
 get_avatar
 get_avatar_comment_types
+get_avatar_data
+get_avatar_url
 get_bloginfo_rss
 get_blogs_of_user
 get_bookmarks
@@ -277,6 +292,7 @@ get_image_tag_class
 get_lastpostdate
 get_lastpostmodified
 get_media_item_args
+get_object_terms
 get_others_drafts
 get_pagenum_link
 get_pages
@@ -421,6 +437,7 @@ login_messages
 login_redirect
 login_url
 loginout
+logout_redirect
 logout_url
 lostpassword_redirect
 lostpassword_url
@@ -444,6 +461,7 @@ mce_css
 mce_external_languages
 mce_external_plugins
 media_buttons_context
+media_embedded_in_content_allowed_types
 media_meta
 media_row_actions
 media_send_to_editor
@@ -573,10 +591,14 @@ pre_comment_content
 pre_comment_user_agent
 pre_comment_user_ip
 pre_ent2ncr
+pre_get_avatar
+pre_get_avatar_data
+pre_get_col_charset
 pre_get_network_by_path
 pre_get_shortlink
 pre_get_site_by_path
 pre_get_space_used
+pre_get_table_charset
 pre_http_request
 pre_http_send_through_proxy
 pre_insert_term
@@ -585,6 +607,7 @@ pre_option_
 pre_option_enable_xmlrpc
 pre_post_link
 pre_post_{$field}
+pre_prepare_themes_for_js
 pre_remote_source
 pre_set_site_transient_
 pre_set_theme_mod_$name
@@ -613,6 +636,10 @@ pre_{$field}
 pre_{$taxonomy}_{$field}
 prepend_attachment
 preprocess_comment
+press_this_data
+press_this_redirect_in_parent
+press_this_save_redirect
+press_this_suggested_html
 preview_post_link
 previous_comments_link_attributes
 previous_posts_link_attributes
@@ -632,6 +659,7 @@ query
 query_string
 query_vars
 quick_edit_dropdown_pages_args
+quick_edit_show_taxonomy
 quicktags_settings
 random_password
 redirect_canonical
@@ -642,6 +670,7 @@ register
 register_url
 registration_errors
 registration_redirect
+removable_query_args
 request
 request_filesystem_credentials
 retrieve_password_message
@@ -768,6 +797,7 @@ the_excerpt_export
 the_excerpt_rss
 the_feed_link
 the_generator
+the_guid
 the_meta_key
 the_modified_author
 the_modified_date
@@ -861,6 +891,7 @@ widget_display_callback
 widget_form_callback
 widget_links_args
 widget_meta_poweredby
+widget_nav_menu_args
 widget_pages_args
 widget_posts_args
 widget_tag_cloud_args
