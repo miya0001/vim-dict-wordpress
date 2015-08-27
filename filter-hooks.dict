@@ -138,6 +138,8 @@ customize_allowed_urls
 customize_control_active
 customize_dynamic_setting_args
 customize_dynamic_setting_class
+customize_nav_menu_available_item_types
+customize_nav_menu_available_items
 customize_panel_active
 customize_refresh_nonces
 customize_sanitize_js_{$this->id}
@@ -175,6 +177,7 @@ default_title
 delete_site_email_content
 delete_{$meta_type}_metadata
 deprecated_argument_trigger_error
+deprecated_constructor_trigger_error
 deprecated_file_trigger_error
 deprecated_function_trigger_error
 determine_current_user
@@ -193,6 +196,7 @@ edit_$field
 edit_bookmark_link
 edit_categories_per_page
 edit_comment_link
+edit_comment_misc_actions
 edit_post_link
 edit_post_{$field}
 edit_posts_per_page
@@ -209,6 +213,8 @@ editable_extensions
 editable_roles
 editable_slug
 editor_max_image_size
+editor_stylesheets
+email_change_email
 embed_cache_oembed_types
 embed_defaults
 embed_googlevideo
@@ -241,6 +247,7 @@ filesystem_method
 filesystem_method_file
 flush_rewrite_rules_hard
 force_filtered_html_on_import
+format_for_editor
 format_to_edit
 found_users_query
 fs_ftp_connection_types
@@ -278,6 +285,7 @@ get_comments_link
 get_comments_number
 get_comments_pagenum_link
 get_date_sql
+get_default_comment_status
 get_delete_post_link
 get_edit_bookmark_link
 get_edit_comment_link
@@ -291,6 +299,7 @@ get_image_tag
 get_image_tag_class
 get_lastpostdate
 get_lastpostmodified
+get_main_network_id
 get_media_item_args
 get_object_terms
 get_others_drafts
@@ -344,6 +353,7 @@ got_rewrite
 got_url_rewrite
 graceful_fail
 graceful_fail_template
+has_nav_menu
 heartbeat_nopriv_received
 heartbeat_nopriv_send
 heartbeat_received
@@ -414,6 +424,7 @@ link_category
 link_title
 list_cats
 list_pages
+list_table_primary_column
 list_terms_exclusions
 load_default_embeds
 load_default_widgets
@@ -491,6 +502,7 @@ nav_menu_css_class
 nav_menu_description
 nav_menu_item_id
 nav_menu_items_{$post_type_name}
+nav_menu_items_{$post_type_name}_recent
 nav_menu_link_attributes
 nav_menu_meta_box_object
 network_admin_url
@@ -534,7 +546,9 @@ page_row_actions
 paginate_links
 parent_file
 parent_post_rel_link
+password_change_email
 password_hint
+password_reset_expiration
 password_reset_key_expired
 phone_content
 pingback_ping_source_uri
@@ -716,6 +730,8 @@ secure_logged_in_cookie
 secure_signon_cookie
 self_link
 send_core_update_notification_email
+send_email_change_email
+send_password_change_email
 session_token_manager
 set-screen-option
 set_url_scheme
@@ -739,6 +755,9 @@ single_post_title
 single_tag_title
 single_term_title
 site_by_path_segments_count
+site_icon_attachment_metadata
+site_icon_image_sizes
+site_icon_meta_tags
 site_option_
 site_transient_
 site_url
@@ -851,6 +870,7 @@ update_welcome_user_email
 update_welcome_user_subject
 update_{$meta_type}_metadata
 upgrader_clear_destination
+upgrader_package_options
 upgrader_post_install
 upgrader_pre_download
 upgrader_pre_install
@@ -901,6 +921,8 @@ widget_update_callback
 wp_admin_bar_class
 wp_admin_css
 wp_admin_css_uri
+wp_ajax_cropped_attachment_id
+wp_ajax_cropped_attachment_metadata
 wp_audio_embed_handler
 wp_audio_extensions
 wp_audio_shortcode
@@ -939,12 +961,13 @@ wp_embed_handler_audio
 wp_embed_handler_video
 wp_embed_handler_youtube
 wp_feed_cache_transient_lifetime
-wp_fullscreen_buttons
 wp_generate_attachment_metadata
 wp_generate_tag_cloud
+wp_generate_tag_cloud_data
 wp_generator_type
 wp_get_attachment_id3_keys
 wp_get_attachment_image_attributes
+wp_get_attachment_image_src
 wp_get_attachment_link
 wp_get_attachment_metadata
 wp_get_attachment_thumb_file
@@ -952,6 +975,7 @@ wp_get_attachment_thumb_url
 wp_get_attachment_url
 wp_get_current_commenter
 wp_get_nav_menu_items
+wp_get_nav_menu_object
 wp_get_nav_menus
 wp_get_object_terms
 wp_get_revision_ui_diff
@@ -1006,13 +1030,16 @@ wp_read_image_metadata
 wp_read_image_metadata_types
 wp_redirect
 wp_redirect_status
+wp_refresh_nonces
 wp_revisions_to_keep
+wp_safe_redirect_fallback
 wp_save_image_editor_file
 wp_save_image_file
 wp_save_post_revision_check_for_changes
 wp_save_post_revision_post_has_changed
 wp_search_stopwords
 wp_setup_nav_menu_item
+wp_should_upgrade_global_tables
 wp_signup_location
 wp_spaces_regexp
 wp_sprintf
@@ -1028,6 +1055,8 @@ wp_unique_post_slug
 wp_unique_post_slug_is_bad_attachment_slug
 wp_unique_post_slug_is_bad_flat_slug
 wp_unique_post_slug_is_bad_hierarchical_slug
+wp_unique_term_slug
+wp_unique_term_slug_is_bad_slug
 wp_update_attachment_metadata
 wp_update_term_parent
 wp_upload_bits

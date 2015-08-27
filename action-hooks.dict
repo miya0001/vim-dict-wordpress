@@ -29,6 +29,7 @@ add_tag_form
 add_tag_form_fields
 add_tag_form_pre
 add_term_relationship
+add_user_role
 add_user_to_blog
 add_{$meta_type}_meta
 added_existing_user
@@ -204,6 +205,7 @@ deleted_usermeta
 deleted_{$meta_type}_meta
 deleted_{$meta_type}meta
 deprecated_argument_run
+deprecated_constructor_run
 deprecated_file_included
 deprecated_function_run
 do_action
@@ -363,6 +365,7 @@ register_sidebar
 registered_post_type
 registered_taxonomy
 remove_user_from_blog
+remove_user_role
 resetpass_form
 restrict_manage_comments
 restrict_manage_posts
@@ -467,6 +470,7 @@ widgets_init
 wp-mail.php
 wp_after_admin_bar_render
 wp_ajax_
+wp_ajax_crop_image_pre_save
 wp_ajax_nopriv_
 wp_before_admin_bar_render
 wp_blacklist_check
