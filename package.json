@@ -1,0 +1,14 @@
+
+{
+  "name": "vim-dict-wordpress",
+  "version": "4.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miya0001/vim-dict-wordpress.git"
+  },
+  "author": "Takayuki Miyauchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miya0001/vim-dict-wordpress/issues"
+  }
+}
