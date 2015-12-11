@@ -140,6 +140,7 @@ WP_Filesystem_ftpsockets
 WP_HTTP_Fsockopen
 WP_HTTP_IXR_Client
 WP_HTTP_Proxy
+WP_HTTP_Response
 WP_Http
 WP_Http_Cookie
 WP_Http_Curl
@@ -157,6 +158,7 @@ WP_MS_Users_List_Table
 WP_MatchesMapRegex
 WP_Media_List_Table
 WP_Meta_Query
+WP_Network
 WP_Object_Cache
 WP_Plugin_Install_List_Table
 WP_Plugins_List_Table
@@ -164,6 +166,9 @@ WP_Post_Comments_List_Table
 WP_Posts_List_Table
 WP_Press_This
 WP_Query
+WP_REST_Request
+WP_REST_Response
+WP_REST_Server
 WP_Rewrite
 WP_Role
 WP_Roles

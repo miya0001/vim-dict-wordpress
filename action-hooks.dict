@@ -24,7 +24,7 @@ add_meta_boxes_link
 add_option
 add_option_{$option}
 add_site_option
-add_site_option_{$option}
+add_site_option_
 add_tag_form
 add_tag_form_fields
 add_tag_form_pre
@@ -76,10 +76,13 @@ after_db_upgrade
 after_delete_post
 after_menu_locations_table
 after_mu_upgrade
+after_password_reset
 after_plugin_row
 after_plugin_row_$plugin_file
 after_setup_theme
 after_signup_form
+after_signup_site
+after_signup_user
 after_switch_theme
 after_theme_row
 after_theme_row_$stylesheet
@@ -92,6 +95,7 @@ atom_entry
 atom_head
 atom_ns
 attachment_submitbox_misc_actions
+attachment_updated
 auth_cookie_bad_hash
 auth_cookie_bad_session_token
 auth_cookie_bad_username
@@ -102,6 +106,7 @@ auth_redirect
 automatic_updates_complete
 before_delete_post
 before_signup_form
+before_signup_header
 before_wp_tiny_mce
 begin_fetch_post_thumbnail_html
 blog_privacy_selector
@@ -113,6 +118,7 @@ clean_object_term_cache
 clean_page_cache
 clean_post_cache
 clean_term_cache
+clean_user_cache
 clear_auth_cookie
 comment_atom_entry
 comment_closed
@@ -150,6 +156,8 @@ customize_controls_init
 customize_controls_print_footer_scripts
 customize_controls_print_scripts
 customize_controls_print_styles
+customize_post_value_set
+customize_post_value_set_{$setting_id}
 customize_preview_init
 customize_preview_{$this->id}
 customize_preview_{$this->type}
@@ -163,7 +171,7 @@ customize_render_section_{$this->id}
 customize_save
 customize_save_
 customize_save_after
-customize_update_
+customize_update_{$this->type}
 dbx_post_advanced
 dbx_post_sidebar
 deactivate_
@@ -177,10 +185,11 @@ delete_comment
 delete_link
 delete_option
 delete_option_$option
+delete_plugin
 delete_post
 delete_postmeta
 delete_site_option
-delete_site_option_{$option}
+delete_site_option_
 delete_site_transient_
 delete_term
 delete_term_relationships
@@ -189,11 +198,13 @@ delete_transient_
 delete_user
 delete_user_form
 delete_usermeta
+delete_widget
 delete_{$meta_type}_meta
 delete_{$meta_type}meta
 deleted_comment
 deleted_link
 deleted_option
+deleted_plugin
 deleted_post
 deleted_postmeta
 deleted_site_transient
@@ -210,6 +221,7 @@ deprecated_file_included
 deprecated_function_run
 do_action
 do_actionbelow
+do_feed_{$feed}
 do_meta_boxes
 do_robots
 do_robotstxt
@@ -241,6 +253,7 @@ edit_term
 edit_term_taxonomies
 edit_term_taxonomy
 edit_terms
+edit_user_created_user
 edit_user_profile
 edit_user_profile_update
 edited_$taxonomy
@@ -248,7 +261,12 @@ edited_term
 edited_term_taxonomies
 edited_term_taxonomy
 edited_terms
+embed_content
+embed_content_meta
+embed_footer
+embed_head
 end_fetch_post_thumbnail_html
+enqueue_embed_scripts
 export_filters
 export_wp
 get_footer
@@ -271,6 +289,7 @@ install_plugins_table_header
 install_themes_pre_{$tab}
 install_themes_table_header
 install_themes_{$tab}
+invite_user
 load-
 load-categories.php
 load-edit-link-categories.php
@@ -302,6 +321,7 @@ manage_media_custom_column
 manage_pages_custom_column
 manage_plugins_custom_column
 manage_posts_custom_column
+manage_posts_extra_tablenav
 manage_sites_custom_column
 manage_themes_custom_column
 manage_{$post->post_type}_posts_custom_column
@@ -309,6 +329,7 @@ mature_blog
 media_buttons
 media_upload_$tab
 media_upload_$type
+ms_network_not_found
 ms_site_not_found
 mu_activity_box_end
 mu_rightnow_end
@@ -317,8 +338,12 @@ myblogs_allblogs_options
 network_admin_edit_
 network_admin_menu
 network_admin_notices
+network_site_new_created_user
 network_site_users_after_list_table
+network_site_users_created_user
+network_user_new_created_user
 opml_head
+page_attributes_meta_box_template
 parse_tax_query
 password_reset
 permalink_structure_changed
@@ -334,6 +359,7 @@ post_comment_status_meta_box-options
 post_edit_form_tag
 post_lock_lost_dialog
 post_locked_dialog
+post_submitbox_minor_actions
 post_submitbox_misc_actions
 post_submitbox_start
 post_updated
@@ -341,6 +367,7 @@ posts_selection
 pre-html-upload-ui
 pre-plupload-upload-ui
 pre-upload-ui
+pre_auto_update
 pre_comment_on_post
 pre_current_active_plugins
 pre_delete_site_option_
@@ -360,6 +387,7 @@ rdf_item
 rdf_ns
 refresh_blog_details
 register_form
+register_new_user
 register_post
 register_sidebar
 registered_post_type
@@ -367,6 +395,7 @@ registered_taxonomy
 remove_user_from_blog
 remove_user_role
 resetpass_form
+rest_api_init
 restrict_manage_comments
 restrict_manage_posts
 restrict_manage_users
@@ -446,7 +475,7 @@ update_option
 update_option_{$option}
 update_postmeta
 update_site_option
-update_site_option_{$option}
+update_site_option_
 update_usermeta
 update_wpmu_options
 update_{$meta_type}_meta
@@ -468,6 +497,7 @@ widgets.php
 widgets_admin_page
 widgets_init
 wp-mail.php
+wp_add_nav_menu_item
 wp_after_admin_bar_render
 wp_ajax_
 wp_ajax_crop_image_pre_save
@@ -492,6 +522,7 @@ wp_loaded
 wp_login
 wp_login_failed
 wp_logout
+wp_mail_failed
 wp_maybe_auto_update
 wp_meta
 wp_network_dashboard_setup
@@ -510,6 +541,7 @@ wp_update_nav_menu
 wp_update_nav_menu_item
 wp_upgrade
 wp_user_dashboard_setup
+wp_verify_nonce_failed
 wpmu_activate_blog
 wpmu_activate_user
 wpmu_blog_updated
