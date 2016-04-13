@@ -1,6 +1,9 @@
 AMFReader
 AMFStream
 AVCSequenceParameterSetReader
+Akismet
+Akismet_Admin
+Akismet_Widget
 AtomEntry
 AtomFeed
 AtomParser
@@ -11,6 +14,7 @@ Bulk_Upgrader_Skin
 Core_Upgrader
 Custom_Background
 Custom_Image_Header
+Featured_Content
 File_Upload_Upgrader
 Gettext_Translations
 IXR_Base64
@@ -93,6 +97,7 @@ Theme_Upgrader
 Theme_Upgrader_Skin
 Translation_Entry
 Translations
+Twenty_Fourteen_Ephemera_Widget
 WP
 WP_Admin_Bar
 WP_Ajax_Response
@@ -119,6 +124,7 @@ WP_Customize_Nav_Menus_Panel
 WP_Customize_New_Menu_Control
 WP_Customize_New_Menu_Section
 WP_Customize_Panel
+WP_Customize_Partial
 WP_Customize_Section
 WP_Customize_Setting
 WP_Customize_Sidebar_Section
@@ -158,6 +164,7 @@ WP_MS_Users_List_Table
 WP_MatchesMapRegex
 WP_Media_List_Table
 WP_Meta_Query
+WP_Metadata_Lazyloader
 WP_Network
 WP_Object_Cache
 WP_Plugin_Install_List_Table
