@@ -8,7 +8,11 @@ This dictionary includes all action hooks, filter hooks and functions.
 
 ## How do I made the dict ?
 
- I was using grep to search hooks and functions.
+```
+$ bash ./build.sh
+```
+
+I was using grep to search hooks and functions.
 
 ```
 # action hooks
@@ -52,4 +56,3 @@ finally, add line to ~/.vimrc like below.
 ## License
 
 This dictionary file is released under the terms of the GPL version 2 or (at your option) any later version.
-

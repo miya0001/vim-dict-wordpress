@@ -4,6 +4,7 @@ set -ex
 
 curl -L https://wordpress.org/latest.tar.gz -o latest.tgz
 tar zxvf latest.tgz
+rm -fr wordpress/wp-content/
 
 # action hooks
 find wordpress -name "*.php" | xargs grep "do_action" \

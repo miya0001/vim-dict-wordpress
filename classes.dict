@@ -1,9 +1,6 @@
 AMFReader
 AMFStream
 AVCSequenceParameterSetReader
-Akismet
-Akismet_Admin
-Akismet_Widget
 AtomEntry
 AtomFeed
 AtomParser
@@ -14,7 +11,6 @@ Bulk_Upgrader_Skin
 Core_Upgrader
 Custom_Background
 Custom_Image_Header
-Featured_Content
 File_Upload_Upgrader
 Gettext_Translations
 IXR_Base64
@@ -97,7 +93,6 @@ Theme_Upgrader
 Theme_Upgrader_Skin
 Translation_Entry
 Translations
-Twenty_Fourteen_Ephemera_Widget
 WP
 WP_Admin_Bar
 WP_Ajax_Response
