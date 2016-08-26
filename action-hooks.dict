@@ -42,7 +42,7 @@ admin_bar_init
 admin_color_scheme_picker
 admin_enqueue_scripts
 admin_footer
-admin_footer-
+admin_footer-$hook_suffix
 admin_footer-press-this.php
 admin_footer-widgets.php
 admin_head
@@ -59,6 +59,9 @@ admin_post_nopriv
 admin_post_nopriv_{$action}
 admin_post_{$action}
 admin_print_footer_scripts
+admin_print_footer_scripts-$hook_suffix
+admin_print_footer_scripts-press-this.php
+admin_print_footer_scripts-widgets.php
 admin_print_scripts
 admin_print_scripts-$hook_suffix
 admin_print_scripts-media-upload-popup
@@ -115,9 +118,11 @@ check_admin_referer
 check_ajax_referer
 clean_attachment_cache
 clean_comment_cache
+clean_network_cache
 clean_object_term_cache
 clean_page_cache
 clean_post_cache
+clean_site_cache
 clean_term_cache
 clean_user_cache
 clear_auth_cookie
@@ -174,6 +179,7 @@ customize_render_section_{$this->id}
 customize_save
 customize_save_
 customize_save_after
+customize_save_validation_before
 customize_update_{$this->type}
 dbx_post_advanced
 dbx_post_sidebar
@@ -222,6 +228,7 @@ deprecated_argument_run
 deprecated_constructor_run
 deprecated_file_included
 deprecated_function_run
+deprecated_hook_run
 do_action
 do_actionbelow
 do_feed_{$feed}
@@ -288,7 +295,9 @@ in_theme_update_message-{$theme_key}
 init
 install_plugins_$tab
 install_plugins_pre_$tab
+install_plugins_pre_upload
 install_plugins_table_header
+install_plugins_upload
 install_themes_pre_{$tab}
 install_themes_table_header
 install_themes_{$tab}
@@ -308,6 +317,7 @@ login_footer
 login_form
 login_form_
 login_head
+login_header
 login_init
 lost_password
 lostpassword_form
@@ -334,6 +344,7 @@ media_buttons
 media_upload_$tab
 media_upload_$type
 metadata_lazyloader_queued_objects
+ms_loaded
 ms_network_not_found
 ms_site_not_found
 mu_activity_box_end
@@ -352,6 +363,7 @@ network_user_new_form
 opml_head
 page_attributes_meta_box_template
 parse_tax_query
+parse_term_query
 password_reset
 permalink_structure_changed
 personal_options
@@ -362,13 +374,16 @@ populate_options
 post-html-upload-ui
 post-plupload-upload-ui
 post-upload-ui
+post_action_{$action}
 post_comment_status_meta_box-options
 post_edit_form_tag
 post_lock_lost_dialog
 post_locked_dialog
+post_stuck
 post_submitbox_minor_actions
 post_submitbox_misc_actions
 post_submitbox_start
+post_unstuck
 post_updated
 posts_selection
 pre-html-upload-ui
@@ -380,6 +395,7 @@ pre_current_active_plugins
 pre_delete_site_option_
 pre_delete_term
 pre_get_search_form
+pre_get_terms
 pre_get_users
 pre_network_site_new_created_user
 pre_post_update
@@ -521,6 +537,7 @@ wp_creating_autosave
 wp_dashboard_setup
 wp_delete_nav_menu
 wp_delete_post_revision
+wp_edit_form_attachment_display
 wp_enqueue_editor
 wp_enqueue_media
 wp_enqueue_scripts

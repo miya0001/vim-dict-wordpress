@@ -46,6 +46,7 @@ audio_submitbox_misc_sections
 auth_cookie
 auth_cookie_expiration
 auth_post_meta_{$meta_key}
+auth_post_{$post_type}_meta_{$meta_key}
 auth_redirect_scheme
 authenticate
 author_email
@@ -160,6 +161,7 @@ customize_sanitize_js_{$this->id}
 customize_sanitize_{$this->id}
 customize_save_response
 customize_section_active
+customize_validate_{$this->id}
 customize_value_{$id_base}
 customizer_widgets_section_args
 dashboard_glance_items
@@ -197,8 +199,10 @@ deprecated_argument_trigger_error
 deprecated_constructor_trigger_error
 deprecated_file_trigger_error
 deprecated_function_trigger_error
+deprecated_hook_trigger_error
 determine_current_user
 disable_captions
+disable_categories_dropdown
 disable_months_dropdown
 display_media_states
 display_post_states
@@ -237,7 +241,6 @@ editor_stylesheets
 email_change_email
 embed_cache_oembed_types
 embed_defaults
-embed_googlevideo
 embed_handler_html
 embed_html
 embed_maybe_make_link
@@ -247,12 +250,17 @@ embed_site_title_html
 embed_thumbnail_image_shape
 embed_thumbnail_image_size
 emoji_ext
+emoji_svg_ext
+emoji_svg_url
 emoji_url
 enable_edit_any_user_configuration
 enable_live_network_counts
+enable_loading_advanced_cache_dropin
+enable_maintenance_mode
 enable_post_by_email_configuration
 enable_press_this_media_discovery
 enable_update_services_configuration
+enable_wp_debug_mode_checks
 enclosure_links
 enter_title_here
 esc_html
@@ -281,6 +289,8 @@ force_filtered_html_on_import
 format_for_editor
 format_to_edit
 found_comments_query
+found_networks_query
+found_sites_query
 found_users_query
 fs_ftp_connection_types
 gallery_style
@@ -298,6 +308,7 @@ get_bloginfo_rss
 get_blogs_of_user
 get_bookmarks
 get_calendar
+get_canonical_url
 get_categories_taxonomy
 get_comment
 get_comment_ID
@@ -335,6 +346,7 @@ get_lastpostdate
 get_lastpostmodified
 get_main_network_id
 get_media_item_args
+get_network
 get_object_terms
 get_others_drafts
 get_page_of_comment
@@ -353,6 +365,7 @@ get_sample_permalink_html
 get_search_form
 get_search_query
 get_shortlink
+get_site
 get_site_icon_url
 get_space_allowed
 get_tags
@@ -541,6 +554,7 @@ mod_rewrite_rules
 month_link
 months_dropdown_results
 ms_site_check
+ms_sites_list_table_query_args
 ms_user_list_site_actions
 ms_user_row_actions
 mu_dropdown_languages
@@ -563,6 +577,7 @@ network_admin_plugin_action_links_{$plugin_file}
 network_admin_url
 network_allowed_themes
 network_by_path_segments_count
+network_edit_site_nav_links
 network_home_url
 network_site_url
 network_sites_updated_message_
@@ -678,6 +693,7 @@ pre_delete_post
 pre_ent2ncr
 pre_get_avatar
 pre_get_avatar_data
+pre_get_blogs_of_user
 pre_get_col_charset
 pre_get_document_title
 pre_get_lastpostmodified
@@ -691,6 +707,7 @@ pre_http_request
 pre_http_send_through_proxy
 pre_insert_term
 pre_kses
+pre_oembed_result
 pre_option_
 pre_option_enable_xmlrpc
 pre_post_link
@@ -755,8 +772,10 @@ random_password
 redirect_canonical
 redirect_network_admin_request
 redirect_post_location
+redirect_term_location
 redirect_user_admin_request
 register
+register_meta_args
 register_post_type_args
 register_taxonomy_args
 register_url
@@ -811,7 +830,7 @@ sanitize_text_field
 sanitize_title
 sanitize_trackback_urls
 sanitize_user
-sanitize_{$meta_type}_meta_{$meta_key}
+sanitize_{$object_type}_meta_{$meta_key}
 schedule_event
 screen_layout_columns
 screen_options_show_screen
@@ -857,10 +876,12 @@ single_tag_title
 single_term_title
 site_allowed_themes
 site_by_path_segments_count
+site_details
 site_icon_attachment_metadata
 site_icon_image_sizes
 site_icon_meta_tags
 site_option_
+site_search_columns
 site_transient_
 site_url
 smilies_src
@@ -930,6 +951,7 @@ the_modified_time
 the_password_form
 the_permalink
 the_permalink_rss
+the_post_thumbnail_caption
 the_search_query
 the_shortlink
 the_tags
@@ -1080,6 +1102,7 @@ wp_generate_attachment_metadata
 wp_generate_tag_cloud
 wp_generate_tag_cloud_data
 wp_generator_type
+wp_get_attachment_caption
 wp_get_attachment_id3_keys
 wp_get_attachment_image_attributes
 wp_get_attachment_image_src
@@ -1150,6 +1173,7 @@ wp_read_image_metadata_types
 wp_redirect
 wp_redirect_status
 wp_refresh_nonces
+wp_resource_hints
 wp_rest_server_class
 wp_revisions_to_keep
 wp_safe_redirect_fallback
@@ -1207,6 +1231,7 @@ wpmu_welcome_notification
 wpmu_welcome_user_notification
 wxr_export_skip_commentmeta
 wxr_export_skip_postmeta
+wxr_export_skip_termmeta
 xmlrpc_allow_anonymous_comments
 xmlrpc_blog_options
 xmlrpc_chunk_parsing_size
@@ -1236,6 +1261,7 @@ year_link
 {$adjacent}_post_link
 {$adjacent}_post_rel_link
 {$boundary}_post_rel_link
+{$context}_memory_limit
 {$field_no_prefix}_edit_pre
 {$field_no_prefix}_save_pre
 {$field}_pre
