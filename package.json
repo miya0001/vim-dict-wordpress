@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/miya0001/vim-dict-wordpress.git"
   },
+  "scripts": {
+    "build": "/usr/bin/env bash ./build.sh"
+  },
   "author": "Takayuki Miyauchi",
   "license": "MIT",
   "bugs": {
