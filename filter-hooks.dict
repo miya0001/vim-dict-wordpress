@@ -190,7 +190,6 @@ default_excerpt
 default_feed
 default_hidden_columns
 default_hidden_meta_boxes
-default_option_
 default_option_{$option}
 default_page_template_title
 default_site_option_
@@ -220,7 +219,6 @@ domain_exists
 duplicate_comment_id
 dynamic_sidebar_has_widgets
 dynamic_sidebar_params
-edit_$field
 edit_bookmark_link
 edit_categories_per_page
 edit_comment_link
@@ -260,6 +258,7 @@ emoji_url
 enable_edit_any_user_configuration
 enable_live_network_counts
 enable_loading_advanced_cache_dropin
+enable_login_autofocus
 enable_maintenance_mode
 enable_post_by_email_configuration
 enable_press_this_media_discovery
@@ -287,6 +286,7 @@ feed_link
 feed_links_show_comments_feed
 feed_links_show_posts_feed
 file_is_displayable_image
+file_mod_allowed
 filesystem_method
 filesystem_method_file
 flush_rewrite_rules_hard
@@ -345,6 +345,7 @@ get_edit_user_link
 get_editable_authors
 get_enclosed
 get_header_image_tag
+get_header_video_url
 get_image_tag
 get_image_tag_class
 get_lastpostdate
@@ -382,7 +383,7 @@ get_terms_fields
 get_terms_orderby
 get_the_archive_description
 get_the_archive_title
-get_the_author_
+get_the_author_{$field}
 get_the_categories
 get_the_date
 get_the_excerpt
@@ -416,7 +417,9 @@ got_url_rewrite
 graceful_fail
 graceful_fail_template
 handle_bulk_actions-
+handle_bulk_actions-{$screen}
 handle_network_bulk_actions-
+handle_network_bulk_actions-{$screen}
 has_nav_menu
 header_video_settings
 heartbeat_nopriv_received
@@ -547,6 +550,9 @@ mce_external_languages
 mce_external_plugins
 media_buttons_context
 media_embedded_in_content_allowed_types
+media_library_months_with_files
+media_library_show_audio_playlist
+media_library_show_video_playlist
 media_meta
 media_row_actions
 media_send_to_editor
@@ -562,6 +568,7 @@ mejs_settings
 menu_order
 meta_query_find_compatible_table_alias
 mime_types
+minimum_site_name_length
 mod_rewrite_rules
 month_link
 months_dropdown_results
@@ -583,6 +590,7 @@ nav_menu_items_{$post_type_name}
 nav_menu_items_{$post_type_name}_recent
 nav_menu_link_attributes
 nav_menu_meta_box_object
+nav_menu_submenu_css_class
 navigation_markup_template
 network_admin_plugin_action_links
 network_admin_plugin_action_links_{$plugin_file}
@@ -634,6 +642,7 @@ override_unload_textdomain
 page_attributes_dropdown_pages_args
 page_css_class
 page_link
+page_menu_link_attributes
 page_rewrite_rules
 page_row_actions
 paginate_links
@@ -667,6 +676,7 @@ post_class
 post_comments_feed_link
 post_comments_feed_link_html
 post_comments_link
+post_date_column_status
 post_date_column_time
 post_edit_category_parent_dropdown_args
 post_embed_url
@@ -695,7 +705,6 @@ postmeta_form_keys
 postmeta_form_limit
 posts_request_ids
 posts_search_orderby
-pre_$field
 pre_add_site_option_{$option}
 pre_category_nicename
 pre_comment_approved
@@ -816,6 +825,7 @@ rest_envelope_response
 rest_index
 rest_jsonp_enabled
 rest_namespace_index
+rest_oembed_ttl
 rest_post_dispatch
 rest_pre_dispatch
 rest_pre_get_setting
@@ -896,6 +906,7 @@ secure_auth_redirect
 secure_logged_in_cookie
 secure_signon_cookie
 self_link
+send_auth_cookies
 send_core_update_notification_email
 send_email_change_email
 send_password_change_email
@@ -918,7 +929,9 @@ signup_another_blog_init
 signup_blog_init
 signup_create_blog_meta
 signup_get_available_languages
+signup_site_meta
 signup_user_init
+signup_user_meta
 single_cat_title
 single_post_title
 single_tag_title
@@ -975,8 +988,8 @@ term_{$field}_rss
 terms_clauses
 terms_to_edit
 the_author
-the_author_
 the_author_posts_link
+the_author_{$field}
 the_category
 the_category_list
 the_category_rss
@@ -1023,6 +1036,7 @@ theme_mod_{$name}
 theme_root
 theme_root_uri
 theme_row_meta
+theme_scandir_exclusions
 theme_{$post_type}_templates
 themes_api
 themes_api_args
@@ -1104,8 +1118,10 @@ widget_pages_args
 widget_posts_args
 widget_tag_cloud_args
 widget_text
+widget_text_content
 widget_title
 widget_update_callback
+widget_{$this->id_base}_instance
 wp_admin_bar_class
 wp_admin_css
 wp_admin_css_uri
@@ -1142,6 +1158,7 @@ wp_die_ajax_handler
 wp_die_handler
 wp_die_xmlrpc_handler
 wp_doing_ajax
+wp_doing_cron
 wp_dropdown_cats
 wp_dropdown_pages
 wp_dropdown_users
@@ -1325,7 +1342,9 @@ year_link
 {$context}_memory_limit
 {$field_no_prefix}_edit_pre
 {$field_no_prefix}_save_pre
+{$field}
 {$field}_pre
+{$option}
 {$permastructname}_rewrite_rules
 {$taxonomy}_row_actions
 {$taxonomy}_{$field}

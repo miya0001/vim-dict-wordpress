@@ -154,6 +154,7 @@ WP_Ajax_Upgrader_Skin
 WP_Automatic_Updater
 WP_Comment_Query
 WP_Comments_List_Table
+WP_Community_Events
 WP_Customize_Background_Image_Control
 WP_Customize_Background_Position_Control
 WP_Customize_Color_Control
@@ -278,6 +279,9 @@ WP_Widget_Categories
 WP_Widget_Factory
 WP_Widget_Form_Customize_Control
 WP_Widget_Links
+WP_Widget_Media_Audio
+WP_Widget_Media_Image
+WP_Widget_Media_Video
 WP_Widget_Meta
 WP_Widget_Pages
 WP_Widget_RSS

@@ -181,9 +181,9 @@ customize_render_partials_before
 customize_render_section
 customize_render_section_{$this->id}
 customize_save
-customize_save_
 customize_save_after
 customize_save_validation_before
+customize_save_{$id_base}
 customize_update_{$this->type}
 dbx_post_advanced
 dbx_post_sidebar
@@ -214,6 +214,7 @@ delete_widget
 delete_{$meta_type}_meta
 delete_{$meta_type}meta
 delete_{$taxonomy}
+deleted_blog
 deleted_comment
 deleted_link
 deleted_option
@@ -408,6 +409,7 @@ pre_post_update
 pre_trackback_post
 pre_uninstall_plugin
 preprocess_signup_form
+print_default_editor_scripts
 print_media_templates
 private_to_published
 profile_personal_options
@@ -501,7 +503,7 @@ trashed_comment
 trashed_post
 trashed_post_comments
 unarchive_blog
-uninstall_
+uninstall_{$file}
 unload_textdomain
 unmature_blog
 unregistered_post_type
