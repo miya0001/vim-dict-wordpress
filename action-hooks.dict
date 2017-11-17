@@ -127,6 +127,7 @@ clean_object_term_cache
 clean_page_cache
 clean_post_cache
 clean_site_cache
+clean_taxonomy_cache
 clean_term_cache
 clean_user_cache
 clear_auth_cookie
@@ -326,6 +327,7 @@ login_form_{$action}
 login_head
 login_header
 login_init
+loop_no_results
 lost_password
 lostpassword_form
 lostpassword_post
@@ -345,6 +347,7 @@ manage_posts_custom_column
 manage_posts_extra_tablenav
 manage_sites_custom_column
 manage_themes_custom_column
+manage_users_extra_tablenav
 manage_{$post->post_type}_posts_custom_column
 mature_blog
 media_buttons
@@ -369,6 +372,7 @@ network_user_new_created_user
 network_user_new_form
 opml_head
 page_attributes_meta_box_template
+page_attributes_misc_attributes
 parse_tax_query
 parse_term_query
 password_reset
@@ -419,7 +423,6 @@ quick_edit_custom_box
 rdf_header
 rdf_item
 rdf_ns
-refresh_blog_details
 register_form
 register_new_user
 register_post
@@ -559,6 +562,7 @@ wp_dashboard_setup
 wp_delete_nav_menu
 wp_delete_post_revision
 wp_edit_form_attachment_display
+wp_enqueue_code_editor
 wp_enqueue_editor
 wp_enqueue_media
 wp_enqueue_scripts

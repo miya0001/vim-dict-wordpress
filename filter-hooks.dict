@@ -14,11 +14,13 @@ admin_footer_text
 admin_memory_limit
 admin_post_thumbnail_html
 admin_post_thumbnail_size
+admin_referrer_policy
 admin_title
 admin_url
 ajax_query_attachments_args
 all_plugins
 all_themes
+alloptions
 allow_dev_auto_core_updates
 allow_major_auto_core_updates
 allow_minor_auto_core_updates
@@ -61,6 +63,7 @@ automatic_updater_disabled
 automatic_updates_debug_email
 automatic_updates_is_vcs_checkout
 automatic_updates_send_debug_email
+available_permalink_structure_tags
 avatar_defaults
 block_local_requests
 blog_option_{$option}
@@ -72,6 +75,7 @@ body_class
 browse-happy-notice
 bulk_actions-{$this->screen->id}
 bulk_post_updated_messages
+can_add_user_to_blog
 can_edit_network
 cancel_comment_reply_link
 category_css_class
@@ -136,17 +140,20 @@ content_url
 contextual_help
 contextual_help_list
 core_version_check_locale
+core_version_check_query_args
 cron_request
 cron_schedules
 current_theme_supports-{$feature}
 custom_menu_order
 customize_allowed_urls
+customize_changeset_branching
 customize_changeset_save_data
 customize_control_active
 customize_dynamic_partial_args
 customize_dynamic_partial_class
 customize_dynamic_setting_args
 customize_dynamic_setting_class
+customize_load_themes
 customize_loaded_components
 customize_nav_menu_available_item_types
 customize_nav_menu_available_items
@@ -249,6 +256,7 @@ embed_maybe_make_link
 embed_oembed_discover
 embed_oembed_html
 embed_site_title_html
+embed_thumbnail_id
 embed_thumbnail_image_shape
 embed_thumbnail_image_size
 emoji_ext
@@ -391,6 +399,7 @@ get_the_generator_{$type}
 get_the_guid
 get_the_modified_date
 get_the_modified_time
+get_the_post_type_description
 get_the_tags
 get_the_terms
 get_the_time
@@ -519,9 +528,11 @@ login_form_middle
 login_form_top
 login_headertitle
 login_headerurl
+login_link_separator
 login_message
 login_messages
 login_redirect
+login_title
 login_url
 loginout
 logout_redirect
@@ -592,6 +603,7 @@ nav_menu_link_attributes
 nav_menu_meta_box_object
 nav_menu_submenu_css_class
 navigation_markup_template
+network_admin_email_change_email
 network_admin_plugin_action_links
 network_admin_plugin_action_links_{$plugin_file}
 network_admin_url
@@ -602,6 +614,7 @@ network_home_url
 network_site_url
 network_sites_updated_message_
 new_admin_email_content
+new_network_admin_email_content
 new_user_email_content
 newblog_notify_siteadmin
 newblogname
@@ -660,6 +673,7 @@ pingback_useragent
 pings_open
 plugin_action_links
 plugin_action_links_{$plugin_file}
+plugin_files_exclusions
 plugin_install_action_links
 plugin_locale
 plugin_row_meta
@@ -706,6 +720,7 @@ postmeta_form_limit
 posts_request_ids
 posts_search_orderby
 pre_add_site_option_{$option}
+pre_cache_alloptions
 pre_category_nicename
 pre_comment_approved
 pre_comment_author_email
@@ -723,6 +738,7 @@ pre_get_blogs_of_user
 pre_get_col_charset
 pre_get_document_title
 pre_get_lastpostmodified
+pre_get_main_site_id
 pre_get_network_by_path
 pre_get_shortlink
 pre_get_site_by_path
@@ -733,6 +749,7 @@ pre_http_request
 pre_http_send_through_proxy
 pre_insert_term
 pre_kses
+pre_move_uploaded_file
 pre_oembed_result
 pre_option_enable_xmlrpc
 pre_option_{$option}
@@ -745,8 +762,11 @@ pre_set_theme_mod_{$name}
 pre_set_transient_{$transient}
 pre_site_option_{$option}
 pre_site_transient_{$transient}
+pre_term_link
 pre_term_{$field}
 pre_transient_{$transient}
+pre_trash_post
+pre_untrash_post
 pre_update_option
 pre_update_option_{$option}
 pre_update_site_option_{$option}
@@ -809,6 +829,7 @@ register_url
 registration_errors
 registration_redirect
 removable_query_args
+replace_editor
 request
 request_filesystem_credentials
 respond_link
@@ -828,6 +849,7 @@ rest_namespace_index
 rest_oembed_ttl
 rest_post_dispatch
 rest_pre_dispatch
+rest_pre_echo_response
 rest_pre_get_setting
 rest_pre_insert_comment
 rest_pre_insert_user
@@ -905,11 +927,14 @@ secure_auth_cookie
 secure_auth_redirect
 secure_logged_in_cookie
 secure_signon_cookie
+self_admin_url
 self_link
 send_auth_cookies
 send_core_update_notification_email
 send_email_change_email
+send_network_admin_email_change_email
 send_password_change_email
+send_site_admin_email_change_email
 session_token_manager
 set-screen-option
 set_url_scheme
@@ -936,6 +961,7 @@ single_cat_title
 single_post_title
 single_tag_title
 single_term_title
+site_admin_email_change_email
 site_allowed_themes
 site_by_path_segments_count
 site_details
@@ -1096,6 +1122,7 @@ user_search_columns
 user_trailingslashit
 user_{$field}
 user_{$name}_label
+username_exists
 users_list_table_query_args
 validate_current_theme
 validate_username
@@ -1108,6 +1135,7 @@ widget_archives_dropdown_args
 widget_categories_args
 widget_categories_dropdown_args
 widget_comments_args
+widget_custom_html_content
 widget_customizer_setting_args
 widget_display_callback
 widget_form_callback
@@ -1122,6 +1150,7 @@ widget_text_content
 widget_title
 widget_update_callback
 widget_{$this->id_base}_instance
+widget_{$this->id_base}_instance_schema
 wp_admin_bar_class
 wp_admin_css
 wp_admin_css_uri
@@ -1144,6 +1173,7 @@ wp_calculate_image_srcset_meta
 wp_check_filetype_and_ext
 wp_check_post_lock_window
 wp_checkdate
+wp_code_editor_settings
 wp_comment_reply
 wp_constrain_dimensions
 wp_count_attachments
@@ -1188,9 +1218,11 @@ wp_get_comment_fields_max_lengths
 wp_get_current_commenter
 wp_get_custom_css
 wp_get_nav_menu_items
+wp_get_nav_menu_name
 wp_get_nav_menu_object
 wp_get_nav_menus
 wp_get_object_terms
+wp_get_object_terms_args
 wp_get_revision_ui_diff
 wp_get_update_data
 wp_handle_upload
@@ -1207,6 +1239,7 @@ wp_insert_post_empty_content
 wp_insert_post_parent
 wp_insert_term_data
 wp_is_large_network
+wp_is_mobile
 wp_kses_allowed_html
 wp_link_pages
 wp_link_pages_args
@@ -1236,16 +1269,21 @@ wp_nav_menu_items
 wp_nav_menu_objects
 wp_nav_menu_{$menu->slug}_items
 wp_network_dashboard_widgets
+wp_new_user_notification_email
+wp_new_user_notification_email_admin
 wp_page_menu
 wp_page_menu_args
 wp_parse_str
+wp_password_change_notification_email
 wp_post_revision_title_expanded
+wp_pre_insert_user_data
 wp_prepare_attachment_for_js
 wp_prepare_revision_for_js
 wp_prepare_themes_for_js
 wp_query_search_exclusion_prefix
 wp_read_image_metadata
 wp_read_image_metadata_types
+wp_read_video_metadata
 wp_redirect
 wp_redirect_status
 wp_refresh_nonces
@@ -1292,6 +1330,7 @@ wp_video_shortcode_class
 wp_video_shortcode_library
 wp_video_shortcode_override
 wp_xmlrpc_server_class
+wpdocs_filter
 wpmu_active_signup
 wpmu_blogs_columns
 wpmu_delete_blog_upload_dir
