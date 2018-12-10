@@ -12,7 +12,7 @@ This dictionary includes all action hooks, filter hooks and functions.
 $ bash ./build.sh
 ```
 
-I was using grep to search hooks and functions.
+I am using grep to search hooks and functions.
 
 ```
 # action hooks
@@ -34,7 +34,7 @@ find . -name "*.php" | xargs grep "apply_filters" \
 # functions
 find . -name "*.php" -exec egrep '^function ' {} \; \
 | sed -e "s/function \(.*\)(.*/\1/g" | sed -e "s/^&//g" \
-| sed -e "s/(.*$//g" | tr -d ' ' |sort | uniq
+| sed -e "s/(.*$//g" | tr -d ' ' | sort | uniq
 ```
 
 ```
@@ -49,7 +49,7 @@ find . -name "*.php" | xargs grep "^class" \
     $ cd ~/.vim/dict
     $ git clone git://github.com/miya0001/vim-dict-wordpress.git
 
-finally, add line to ~/.vimrc like below.
+Then, add line to ~/.vimrc like below.
 
     autocmd FileType php :set dictionary=~/.vim/dict/vim-dict-wordpress/*.dict
 
