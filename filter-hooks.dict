@@ -26,6 +26,7 @@ allow_major_auto_core_updates
 allow_minor_auto_core_updates
 allow_password_reset
 allow_subdirectory_install
+allowed_block_types
 allowed_http_origin
 allowed_http_origins
 allowed_redirect_hosts
@@ -49,7 +50,7 @@ auth_cookie
 auth_cookie_expiration
 auth_redirect_scheme
 auth_{$object_type}_meta_{$meta_key}
-auth_{$object_type}_{$sub_type}_meta_{$meta_key}
+auth_{$object_type}_meta_{$meta_key}_for_{$object_subtype}
 authenticate
 author_email
 author_feed_link
@@ -65,7 +66,11 @@ automatic_updates_is_vcs_checkout
 automatic_updates_send_debug_email
 available_permalink_structure_tags
 avatar_defaults
+block_categories
+block_editor_preload_paths
+block_editor_settings
 block_local_requests
+block_parser_class
 blog_option_{$option}
 blog_redirect_404
 bloginfo
@@ -204,12 +209,14 @@ default_site_option_{$option}
 default_title
 delete_site_email_content
 delete_{$meta_type}_metadata
+delete_{$meta_type}_metadata_by_mid
 deprecated_argument_trigger_error
 deprecated_constructor_trigger_error
 deprecated_file_trigger_error
 deprecated_function_trigger_error
 deprecated_hook_trigger_error
 determine_current_user
+determine_locale
 disable_captions
 disable_categories_dropdown
 disable_months_dropdown
@@ -269,7 +276,6 @@ enable_loading_advanced_cache_dropin
 enable_login_autofocus
 enable_maintenance_mode
 enable_post_by_email_configuration
-enable_press_this_media_discovery
 enable_update_services_configuration
 enable_wp_debug_mode_checks
 enclosure_links
@@ -277,6 +283,7 @@ enter_title_here
 esc_html
 esc_textarea
 example_filter
+excerpt_allowed_blocks
 excerpt_length
 excerpt_more
 excerpt_save_pre
@@ -297,6 +304,7 @@ file_is_displayable_image
 file_mod_allowed
 filesystem_method
 filesystem_method_file
+filter_block_editor_meta_boxes
 flush_rewrite_rules_hard
 force_filtered_html_on_import
 format_for_editor
@@ -361,6 +369,7 @@ get_lastpostmodified
 get_main_network_id
 get_media_item_args
 get_network
+get_object_subtype_{$object_type}
 get_object_terms
 get_others_drafts
 get_page_of_comment
@@ -414,6 +423,7 @@ get_{$adjacent}_post_join
 get_{$adjacent}_post_sort
 get_{$adjacent}_post_where
 get_{$meta_type}_metadata
+get_{$meta_type}_metadata_by_mid
 get_{$taxonomy}
 getarchives_join
 getarchives_where
@@ -644,6 +654,7 @@ oembed_request_post_id
 oembed_response_data
 oembed_result
 oembed_ttl
+old_slug_redirect_post_id
 old_slug_redirect_url
 option_
 option_enable_xmlrpc
@@ -730,6 +741,7 @@ pre_comment_content
 pre_comment_user_agent
 pre_comment_user_ip
 pre_delete_post
+pre_determine_locale
 pre_do_shortcode_tag
 pre_ent2ncr
 pre_get_avatar
@@ -788,11 +800,6 @@ pre_{$field}
 pre_{$taxonomy}_{$field}
 prepend_attachment
 preprocess_comment
-press_this_data
-press_this_redirect_in_parent
-press_this_save_post
-press_this_save_redirect
-press_this_suggested_html
 preview_post_link
 previous_comments_link_attributes
 previous_posts_link_attributes
@@ -804,6 +811,7 @@ print_scripts_array
 print_styles_array
 privacy_on_link_text
 privacy_on_link_title
+privacy_policy_url
 private_title_format
 process_text_diff_html
 protected_title_format
@@ -829,6 +837,7 @@ register_url
 registration_errors
 registration_redirect
 removable_query_args
+render_block
 replace_editor
 request
 request_filesystem_credentials
@@ -858,11 +867,13 @@ rest_pre_insert_{$this->taxonomy}
 rest_pre_serve_request
 rest_pre_update_setting
 rest_prepare_attachment
+rest_prepare_autosave
 rest_prepare_comment
 rest_prepare_post_type
 rest_prepare_revision
 rest_prepare_status
 rest_prepare_taxonomy
+rest_prepare_theme
 rest_prepare_user
 rest_prepare_{$this->post_type}
 rest_prepare_{$this->taxonomy}
@@ -873,8 +884,10 @@ rest_request_before_callbacks
 rest_request_from_url
 rest_request_parameter_order
 rest_response_link_curies
+rest_revision_query
 rest_route_data
 rest_send_nocache_headers
+rest_themes_collection_params
 rest_url
 rest_url_prefix
 rest_user_collection_params
@@ -912,6 +925,7 @@ sanitize_title
 sanitize_trackback_urls
 sanitize_user
 sanitize_{$object_type}_meta_{$meta_key}
+sanitize_{$object_type}_meta_{$meta_key}_for_{$object_subtype}
 schedule_event
 screen_layout_columns
 screen_options_show_screen
@@ -1042,6 +1056,7 @@ the_password_form
 the_permalink
 the_permalink_rss
 the_post_thumbnail_caption
+the_privacy_policy_link
 the_search_query
 the_shortlink
 the_tags
@@ -1063,6 +1078,7 @@ theme_root
 theme_root_uri
 theme_row_meta
 theme_scandir_exclusions
+theme_templates
 theme_{$post_type}_templates
 themes_api
 themes_api_args
@@ -1094,6 +1110,8 @@ update_welcome_subject
 update_welcome_user_email
 update_welcome_user_subject
 update_{$meta_type}_metadata
+update_{$meta_type}_metadata_by_mid
+update_{$meta_type}_metadata_cache
 upgrader_clear_destination
 upgrader_package_options
 upgrader_post_install
@@ -1106,17 +1124,29 @@ upload_per_page
 upload_post_params
 upload_size_limit
 url_to_postid
+use_block_editor_for_post
+use_block_editor_for_post_type
 use_curl_transport
 use_default_gallery_style
 use_google_chrome_frame
 use_streams_transport
 user_admin_url
 user_can_richedit
+user_confirmed_action_email_content
 user_contactmethods
 user_dashboard_url
+user_erasure_complete_email_subject
+user_erasure_fulfillment_email_to
 user_has_cap
 user_profile_picture_description
 user_registration_email
+user_request_action_confirmed_message
+user_request_action_description
+user_request_action_email_content
+user_request_action_email_subject
+user_request_confirmed_email_subject
+user_request_confirmed_email_to
+user_request_key_expiration
 user_row_actions
 user_search_columns
 user_trailingslashit
@@ -1156,6 +1186,7 @@ wp_admin_css
 wp_admin_css_uri
 wp_ajax_cropped_attachment_id
 wp_ajax_cropped_attachment_metadata
+wp_anonymize_comment
 wp_audio_embed_handler
 wp_audio_extensions
 wp_audio_shortcode
@@ -1217,6 +1248,7 @@ wp_get_attachment_url
 wp_get_comment_fields_max_lengths
 wp_get_current_commenter
 wp_get_custom_css
+wp_get_default_privacy_policy_content
 wp_get_nav_menu_items
 wp_get_nav_menu_name
 wp_get_nav_menu_object
@@ -1280,6 +1312,15 @@ wp_pre_insert_user_data
 wp_prepare_attachment_for_js
 wp_prepare_revision_for_js
 wp_prepare_themes_for_js
+wp_privacy_anonymize_data
+wp_privacy_export_expiration
+wp_privacy_exports_dir
+wp_privacy_exports_url
+wp_privacy_personal_data_email_content
+wp_privacy_personal_data_erasers
+wp_privacy_personal_data_erasure_page
+wp_privacy_personal_data_export_page
+wp_privacy_personal_data_exporters
 wp_query_search_exclusion_prefix
 wp_read_image_metadata
 wp_read_image_metadata_types
@@ -1288,6 +1329,7 @@ wp_redirect
 wp_redirect_status
 wp_refresh_nonces
 wp_resource_hints
+wp_rest_search_handlers
 wp_rest_server_class
 wp_revisions_to_keep
 wp_safe_redirect_fallback
@@ -1346,6 +1388,7 @@ wpmu_validate_blog_signup
 wpmu_validate_user_signup
 wpmu_welcome_notification
 wpmu_welcome_user_notification
+write_your_story
 wxr_export_skip_commentmeta
 wxr_export_skip_postmeta
 wxr_export_skip_termmeta
