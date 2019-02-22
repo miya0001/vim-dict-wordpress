@@ -12,7 +12,6 @@ Core_Upgrader
 Custom_Background
 Custom_Image_Header
 File_Upload_Upgrader
-Gettext_Translations
 IXR_Base64
 IXR_Client
 IXR_ClientMulticall
@@ -25,16 +24,8 @@ IXR_Server
 IXR_Value
 Language_Pack_Upgrader
 Language_Pack_Upgrader_Skin
-MO
 MagpieRSS
-NOOP_Translations
 PHPMailer
-PO
-POMO_CachedFileReader
-POMO_CachedIntFileReader
-POMO_FileReader
-POMO_Reader
-POMO_StringReader
 POP3
 PasswordHash
 Plugin_Installer_Skin
@@ -146,8 +137,6 @@ Text_MappedDiff
 Theme_Installer_Skin
 Theme_Upgrader
 Theme_Upgrader_Skin
-Translation_Entry
-Translations
 WP
 WP_Admin_Bar
 WP_Ajax_Response

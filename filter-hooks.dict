@@ -9,7 +9,6 @@ add_signup_meta
 add_{$meta_type}_metadata
 additional_capabilities_display
 admin_body_class
-admin_comment_types_dropdown
 admin_footer_text
 admin_memory_limit
 admin_post_thumbnail_html
@@ -22,6 +21,7 @@ all_plugins
 all_themes
 alloptions
 allow_dev_auto_core_updates
+allow_empty_comment
 allow_major_auto_core_updates
 allow_minor_auto_core_updates
 allow_password_reset
@@ -32,6 +32,7 @@ allowed_http_origins
 allowed_redirect_hosts
 allowed_themes
 apply_filters
+apply_filters_ref_array
 async_update_translation
 async_upload_{$type}
 atom_enclosure
@@ -67,6 +68,7 @@ automatic_updates_send_debug_email
 available_permalink_structure_tags
 avatar_defaults
 block_categories
+block_editor_no_javascript_message
 block_editor_preload_paths
 block_editor_settings
 block_local_requests
@@ -132,6 +134,7 @@ comment_text_rss
 comment_url
 comments_array
 comments_link_feed
+comments_list_table_query_args
 comments_number
 comments_open
 comments_per_page
@@ -146,7 +149,6 @@ contextual_help
 contextual_help_list
 core_version_check_locale
 core_version_check_query_args
-cron_request
 cron_schedules
 current_theme_supports-{$feature}
 custom_menu_order
@@ -230,6 +232,7 @@ document_title_separator
 documentation_ignore_functions
 doing_it_wrong_trigger_error
 domain_exists
+download_url_error_max_body_size
 duplicate_comment_id
 dynamic_sidebar_has_widgets
 dynamic_sidebar_params
@@ -292,7 +295,6 @@ expiration_of_site_transient_{$transient}
 expiration_of_transient_{$transient}
 export_args
 export_wp_filename
-ext2type
 extra_theme_headers
 extra_{$context}_headers
 fallback_intermediate_image_sizes
@@ -385,6 +387,7 @@ get_pung
 get_role_list
 get_sample_permalink
 get_sample_permalink_html
+get_schedule
 get_search_form
 get_search_query
 get_shortlink
@@ -427,7 +430,6 @@ get_{$meta_type}_metadata_by_mid
 get_{$taxonomy}
 getarchives_join
 getarchives_where
-getimagesize_mimes_to_exts
 gettext
 gettext_with_context
 global_terms_enabled
@@ -440,6 +442,7 @@ handle_bulk_actions-{$screen}
 handle_network_bulk_actions-
 handle_network_bulk_actions-{$screen}
 has_nav_menu
+has_post_thumbnail
 header_video_settings
 heartbeat_nopriv_received
 heartbeat_nopriv_send
@@ -483,7 +486,6 @@ image_resize_dimensions
 image_save_pre
 image_send_to_editor
 image_send_to_editor_url
-image_size_names_choose
 image_strip_meta
 img_caption_shortcode
 img_caption_shortcode_width
@@ -527,6 +529,9 @@ load_image_to_edit
 load_image_to_edit_attachmenturl
 load_image_to_edit_filesystempath
 load_image_to_edit_path
+load_script_textdomain_relative_path
+load_script_translation_file
+load_script_translations
 load_textdomain_mofile
 locale
 locale_stylesheet_uri
@@ -588,7 +593,6 @@ media_view_strings
 mejs_settings
 menu_order
 meta_query_find_compatible_table_alias
-mime_types
 minimum_site_name_length
 mod_rewrite_rules
 month_link
@@ -619,10 +623,9 @@ network_admin_plugin_action_links_{$plugin_file}
 network_admin_url
 network_allowed_themes
 network_by_path_segments_count
-network_edit_site_nav_links
 network_home_url
 network_site_url
-network_sites_updated_message_
+network_sites_updated_message_{$action}
 new_admin_email_content
 new_network_admin_email_content
 new_user_email_content
@@ -646,8 +649,6 @@ oembed_default_width
 oembed_discovery_links
 oembed_endpoint_url
 oembed_fetch_url
-oembed_linktypes
-oembed_min_max_width
 oembed_providers
 oembed_remote_get_args
 oembed_request_post_id
@@ -733,6 +734,7 @@ posts_search_orderby
 pre_add_site_option_{$option}
 pre_cache_alloptions
 pre_category_nicename
+pre_clear_scheduled_hook
 pre_comment_approved
 pre_comment_author_email
 pre_comment_author_name
@@ -740,6 +742,7 @@ pre_comment_author_url
 pre_comment_content
 pre_comment_user_agent
 pre_comment_user_ip
+pre_count_users
 pre_delete_post
 pre_determine_locale
 pre_do_shortcode_tag
@@ -752,6 +755,8 @@ pre_get_document_title
 pre_get_lastpostmodified
 pre_get_main_site_id
 pre_get_network_by_path
+pre_get_ready_cron_jobs
+pre_get_scheduled_event
 pre_get_shortlink
 pre_get_site_by_path
 pre_get_space_used
@@ -761,6 +766,7 @@ pre_http_request
 pre_http_send_through_proxy
 pre_insert_term
 pre_kses
+pre_load_script_translations
 pre_move_uploaded_file
 pre_oembed_result
 pre_option_enable_xmlrpc
@@ -769,6 +775,9 @@ pre_post_link
 pre_post_{$field}
 pre_prepare_themes_for_js
 pre_remote_source
+pre_render_block
+pre_reschedule_event
+pre_schedule_event
 pre_set_site_transient_{$transient}
 pre_set_theme_mod_{$name}
 pre_set_transient_{$transient}
@@ -778,6 +787,8 @@ pre_term_link
 pre_term_{$field}
 pre_transient_{$transient}
 pre_trash_post
+pre_unschedule_event
+pre_unschedule_hook
 pre_untrash_post
 pre_update_option
 pre_update_option_{$option}
@@ -794,7 +805,9 @@ pre_user_nicename
 pre_user_nickname
 pre_user_url
 pre_user_{$field}
+pre_wp_is_site_initialized
 pre_wp_nav_menu
+pre_wp_unique_post_slug
 pre_wp_update_comment_count_now
 pre_{$field}
 pre_{$taxonomy}_{$field}
@@ -838,6 +851,7 @@ registration_errors
 registration_redirect
 removable_query_args
 render_block
+render_block_data
 replace_editor
 request
 request_filesystem_credentials
@@ -857,6 +871,7 @@ rest_jsonp_enabled
 rest_namespace_index
 rest_oembed_ttl
 rest_post_dispatch
+rest_post_search_query
 rest_pre_dispatch
 rest_pre_echo_response
 rest_pre_get_setting
@@ -910,7 +925,6 @@ rss_enclosure
 rss_update_frequency
 rss_update_period
 run_wptexturize
-safe_style_css
 salt
 sanitize_email
 sanitize_file_name
@@ -1039,7 +1053,6 @@ the_content_feed
 the_content_more_link
 the_content_rss
 the_date
-the_editor
 the_editor_content
 the_excerpt
 the_excerpt_embed
@@ -1160,21 +1173,14 @@ view_mode_post_types
 views_{$this->screen->id}
 walker_nav_menu_start_el
 whitelist_options
-widget_archives_args
-widget_archives_dropdown_args
 widget_categories_args
 widget_categories_dropdown_args
-widget_comments_args
 widget_custom_html_content
 widget_customizer_setting_args
 widget_display_callback
 widget_form_callback
 widget_links_args
-widget_meta_poweredby
 widget_nav_menu_args
-widget_pages_args
-widget_posts_args
-widget_tag_cloud_args
 widget_text
 widget_text_content
 widget_title
@@ -1205,7 +1211,6 @@ wp_check_filetype_and_ext
 wp_check_post_lock_window
 wp_checkdate
 wp_code_editor_settings
-wp_comment_reply
 wp_constrain_dimensions
 wp_count_attachments
 wp_count_comments
@@ -1217,6 +1222,7 @@ wp_default_editor
 wp_delete_file
 wp_die_ajax_handler
 wp_die_handler
+wp_die_json_handler
 wp_die_xmlrpc_handler
 wp_doing_ajax
 wp_doing_cron
@@ -1257,7 +1263,6 @@ wp_get_object_terms
 wp_get_object_terms_args
 wp_get_revision_ui_diff
 wp_get_update_data
-wp_handle_upload
 wp_header_image_attachment_metadata
 wp_headers
 wp_http_accept_encoding
@@ -1265,14 +1270,17 @@ wp_http_cookie_value
 wp_http_ixr_client_headers
 wp_image_editor_before_change
 wp_image_editors
+wp_initialize_site_args
 wp_insert_attachment_data
 wp_insert_post_data
 wp_insert_post_empty_content
 wp_insert_post_parent
 wp_insert_term_data
+wp_insert_term_duplicate_term_check
 wp_is_large_network
 wp_is_mobile
 wp_kses_allowed_html
+wp_kses_uri_attributes
 wp_link_pages
 wp_link_pages_args
 wp_link_pages_link
@@ -1303,6 +1311,7 @@ wp_nav_menu_{$menu->slug}_items
 wp_network_dashboard_widgets
 wp_new_user_notification_email
 wp_new_user_notification_email_admin
+wp_normalize_site_data
 wp_page_menu
 wp_page_menu_args
 wp_parse_str
@@ -1343,8 +1352,8 @@ wp_should_upgrade_global_tables
 wp_signup_location
 wp_spaces_regexp
 wp_sprintf
-wp_sprintf_l
 wp_tag_cloud
+wp_targeted_link_rel
 wp_terms_checklist_args
 wp_theme_editor_filetypes
 wp_title
@@ -1361,10 +1370,11 @@ wp_unique_term_slug
 wp_unique_term_slug_is_bad_slug
 wp_update_attachment_metadata
 wp_update_comment_data
+wp_update_php_url
 wp_update_term_data
 wp_update_term_parent
-wp_upload_bits
 wp_user_dashboard_widgets
+wp_using_themes
 wp_video_embed_handler
 wp_video_extensions
 wp_video_shortcode
@@ -1378,11 +1388,7 @@ wpmu_blogs_columns
 wpmu_delete_blog_upload_dir
 wpmu_drop_tables
 wpmu_signup_blog_notification
-wpmu_signup_blog_notification_email
-wpmu_signup_blog_notification_subject
 wpmu_signup_user_notification
-wpmu_signup_user_notification_email
-wpmu_signup_user_notification_subject
 wpmu_users_columns
 wpmu_validate_blog_signup
 wpmu_validate_user_signup
@@ -1392,6 +1398,7 @@ write_your_story
 wxr_export_skip_commentmeta
 wxr_export_skip_postmeta
 wxr_export_skip_termmeta
+x_redirect_by
 xmlrpc_allow_anonymous_comments
 xmlrpc_blog_options
 xmlrpc_chunk_parsing_size
